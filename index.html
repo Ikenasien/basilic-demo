@@ -4,419 +4,685 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Le Basilic · Bar, hôtel, restaurant à Saligny (Yonne) · maquette</title>
-<meta name="description" content="Le Basilic, bar, hôtel et restaurant au 57 Grande Rue à Saligny (Yonne), à 5 km de Sens : 4 chambres exposées plein sud et une cuisine maison à base de produits frais.">
+<title>Le Basilic (maquette) · Bar, hôtel, restaurant à Saligny (Yonne)</title>
+<meta name="description" content="Maquette de site vitrine pour Le Basilic, bar, hôtel et restaurant à Saligny (Yonne), à 5&nbsp;km de Sens&nbsp;: 4 chambres à l'étage exposées plein sud, cuisine maison à base de produits frais, bar et terrasse.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Le Basilic">
-<meta property="og:title" content="Le Basilic · Bar, hôtel, restaurant à Saligny (maquette)">
-<meta property="og:description" content="Bar, hôtel et restaurant à Saligny (Yonne), à 5 km de Sens. 4 chambres exposées plein sud, cuisine maison à base de produits frais. Maquette non officielle.">
-<meta name="theme-color" content="#fcf9f2">
+<meta property="og:title" content="Le Basilic (maquette) · Bar, hôtel, restaurant à Saligny">
+<meta property="og:description" content="Maquette non officielle. Bar, hôtel et restaurant à Saligny (Yonne), à 5&nbsp;km de Sens&nbsp;: 4 chambres exposées plein sud et une cuisine maison à base de produits frais.">
+<meta name="theme-color" content="#f7f0e1">
 <meta name="color-scheme" content="light">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f6f0e3'/%3E%3Cpath d='M14 50C14 30 28 14 52 12c0 22-14 38-38 38z' fill='%232f5a3f'/%3E%3Cpath d='M18 46C26 37 34 29 44 20' stroke='%23f6f0e3' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Ccircle%20cx='32'%20cy='32'%20r='31'%20fill='%231f3a2b'/%3E%3Cpath%20d='M16%2049c-3-12%202-24%2011-31%207-5.5%2016-7.5%2024-7%201%2010-1.5%2020-8%2027.5C36%2046%2026.5%2050.5%2016%2049z'%20fill='%239cc58b'/%3E%3Cpath%20d='M12.5%2052.5l5-5C26%2039%2035%2028.5%2044.5%2018'%20fill='none'%20stroke='%231f3a2b'%20stroke-width='2.8'%20stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:opsz,wght,SOFT@9..144,500..700,100&family=Nunito+Sans:wght@400;700&display=swap">
 <style>
-/* ============ Jetons ============ */
+/* ==========================================================
+   Le Basilic — maquette « Bistrot de village »
+   Mobile d'abord (~360 px), enrichi pour tablette et bureau.
+   ========================================================== */
 :root{
-  --basil-950:#14271c;
-  --basil-900:#1c3526;
-  --basil-800:#264733;
-  --basil-700:#2f5a3f;
-  --basil-600:#3f6f4d;
-  --basil-200:#c9d8c1;
-  --basil-100:#e4ecdc;
-  --cream-50:#fcf9f2;
-  --cream-100:#f6f0e3;
-  --cream-200:#ede3cd;
-  --paper:#fffdf7;
-  --ink:#1b2a21;
-  --ink-soft:#4b5a50;
-  --tomato:#a8432b;
-  --tomato-light:#eab48f;
-  --line:rgba(31,58,43,.14);
-  --line-strong:rgba(31,58,43,.3);
-  --focus:#a8432b;
-  --serif:"Fraunces",Georgia,"Times New Roman",serif;
-  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  --gutter:clamp(1rem,5vw,3rem);
-  --scroll-offset:7.5rem;
-  --leaf-pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%232f5a3f' stroke-opacity='.12' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M12 26c0-8 6-14 14-14 0 8-6 14-14 14zM12 26l9-9'/%3E%3Cpath d='M62 62c-8 0-14-6-14-14 8 0 14 6 14 14zM62 62l-9-9'/%3E%3C/g%3E%3C/svg%3E");
-}
-.js{--scroll-offset:4.25rem}
-@media (min-width:64em){:root{--scroll-offset:5rem}}
+  --basilic-950:#16291f;
+  --basilic-900:#1f3a2b;
+  --basilic-800:#274a36;
+  --basilic-700:#2f5d43;
+  --basilic-600:#3f7552;
+  --basilic-500:#5a8f5f;
+  --basilic-300:#a8c69c;
+  --basilic-200:#cfe0c4;
+  --basilic-100:#e6eedb;
+  --creme-50:#fdfaf3;
+  --creme:#f7f0e1;
+  --creme-200:#efe5cf;
+  --creme-300:#e4d6b8;
+  --encre:#1f2b25;
+  --encre-douce:#4b5750;
+  --tomate:#a83f25;
+  --tomate-clair:#f2a88f;
+  /* Ardoise vert basilic dans un cadre de bois clair */
+  --ardoise:#1d2d26;
+  --craie:#f3efe4;
+  --craie-douce:#c8cec5;
+  --bois-clair:#bf9c6c;
+  --bois:#94724a;
+  --bois-moyen:#a8855a;
 
-/* ============ Base ============ */
+  --police-titre:"Fraunces", Georgia, "Times New Roman", serif;
+  --police-texte:"Nunito Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --police-craie:"Caveat", "Segoe Print", "Bradley Hand", "Chalkboard SE", "Marker Felt", system-ui, sans-serif;
+
+  --entete-h:4rem;
+  --barre-h:4.5rem;
+  --rayon:1.25rem;
+  --rayon-l:2rem;
+  --ombre:0 1px 2px rgb(31 58 43 / .06), 0 10px 24px -14px rgb(31 58 43 / .32);
+  --lin:
+    repeating-linear-gradient(0deg, rgb(120 96 48 / .035) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, rgb(120 96 48 / .03) 0 1px, transparent 1px 5px);
+  --motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%232f5d43' stroke-opacity='.14' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 38c-1.5-10 5-19 18-21-1 10-7 19-18 21zM13 37l14-17'/%3E%3Cpath d='M62 84c-1.5-10 5-19 18-21-1 10-7 19-18 21zM63 83l14-17' transform='rotate%28-80 71 74%29'/%3E%3C/g%3E%3C/svg%3E");
+  --motif-creme:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23f7f0e1' stroke-opacity='.07' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 38c-1.5-10 5-19 18-21-1 10-7 19-18 21zM13 37l14-17'/%3E%3Cpath d='M62 84c-1.5-10 5-19 18-21-1 10-7 19-18 21zM63 83l14-17' transform='rotate%28-80 71 74%29'/%3E%3C/g%3E%3C/svg%3E");
+  --trait:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M3 8c12-5 22-5 32-1.5s20 3.5 30 0 22-5 32-1.5 14 3 20 1' fill='none' stroke='%235a8f5f' stroke-opacity='1' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+  --trait-clair:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M3 8c12-5 22-5 32-1.5s20 3.5 30 0 22-5 32-1.5 14 3 20 1' fill='none' stroke='%23a8c69c' stroke-opacity='1' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+  --trait-craie:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M3 8c12-5 22-5 32-1.5s20 3.5 30 0 22-5 32-1.5 14 3 20 1' fill='none' stroke='%23f3efe4' stroke-opacity='.55' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* ---------- Base ---------- */
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-bottom:calc(var(--barre-h) + 1rem)}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;background:var(--cream-50);color:var(--ink);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-wrap:break-word}
-h1,h2,h3,p,ul,ol,dl,dd,figure,address{margin:0}
-h1,h2,h3{text-wrap:balance}
-p{text-wrap:pretty}
+body{
+  margin:0;
+  font-family:var(--police-texte);
+  font-size:1rem;
+  line-height:1.65;
+  color:var(--encre);
+  background-color:var(--creme);
+  background-image:var(--lin);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--police-titre);font-weight:600;line-height:1.12;margin:0;color:var(--basilic-900);text-wrap:balance}
+p,figure,dl,dd,address{margin:0}
 address{font-style:normal}
-a{color:var(--basil-700);text-decoration-thickness:1px;text-underline-offset:.22em}
-a:hover{color:var(--basil-900);text-decoration-thickness:2px}
-:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:3px}
+ul{margin:0;padding:0;list-style:none}
+a{color:var(--basilic-700);text-decoration-thickness:.08em;text-underline-offset:.2em}
+a:hover{color:var(--basilic-900)}
+:focus-visible{outline:3px solid var(--tomate);outline-offset:3px;border-radius:.4rem}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+/* .nowrap : insécable dès 18em (voir plus bas), pour que le texte très agrandi puisse encore passer à la ligne */
+.coupe{overflow-wrap:anywhere}
 main:focus{outline:none}
-main,section[id]{scroll-margin-top:var(--scroll-offset)}
-.i{display:inline-block;width:1.25rem;height:1.25rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
-.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-.nowrap{white-space:nowrap}
-.container{width:100%;max-width:74rem;margin-inline:auto;padding-inline:var(--gutter)}
+/* Les ancres ne passent pas sous l'en-tête collant (hauteur + bordure) */
+main,.section,.aussi{scroll-margin-top:calc(var(--entete-h) + 2px)}
+/* … ni les liens qui reçoivent le focus au clavier (Maj+Tab) */
+main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .sprite{position:absolute;width:0;height:0;overflow:hidden}
+.ic{display:inline-block;width:1.25rem;height:1.25rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.feuille{display:block;flex:none}
+.conteneur{width:min(100% - 2rem, 70rem);margin-inline:auto}
 
-/* ============ Bandeau maquette ============ */
-.maquette{background:var(--cream-200);color:var(--basil-800);border-bottom:1px solid var(--line);padding:.5rem var(--gutter);text-align:center;font:500 .8125rem/1.45 var(--sans);letter-spacing:.01em}
-.maquette p{max-width:62ch;margin-inline:auto}
-.maquette__dot{display:inline-block;width:.4rem;height:.4rem;margin-right:.5rem;border-radius:50%;background:var(--basil-600);vertical-align:.12em}
+/* ---------- Bandeau maquette ---------- */
+.bandeau{background:var(--basilic-100);color:var(--basilic-900);border-bottom:1px solid rgb(31 58 43 / .08)}
+.bandeau p{display:flex;justify-content:center;align-items:center;gap:.5rem;padding:.45rem 1rem;font-size:.875rem;line-height:1.4;text-align:center}
+.bandeau .ic{width:1rem;height:1rem;color:var(--basilic-600)}
 
-/* ============ Lien d'évitement ============ */
-.skip{position:absolute;top:.75rem;left:.75rem;z-index:100;padding:.8rem 1.1rem;border-radius:6px;background:var(--basil-900);color:var(--cream-50);font-weight:600;text-decoration:none;transform:translateY(-250%)}
-.skip:focus{transform:none;color:var(--cream-50)}
+/* ---------- Lien d'évitement ---------- */
+.evitement{position:absolute;left:1rem;top:-6rem;z-index:100;padding:.75rem 1.25rem;border-radius:999px;background:var(--basilic-900);color:var(--creme-50);font-weight:700;text-decoration:none}
+.evitement:focus{top:.75rem;color:var(--creme-50)}
 
-/* ============ En-tête ============ */
-.site-header{position:sticky;top:0;z-index:40;background:rgba(252,249,242,.93);-webkit-backdrop-filter:blur(10px) saturate(1.3);backdrop-filter:blur(10px) saturate(1.3);border-bottom:1px solid var(--line)}
-.site-header__bar{display:flex;flex-wrap:wrap;align-items:center;gap:.375rem;min-height:4rem;padding-block:.5rem}
-.brand{display:inline-flex;align-items:center;gap:.55rem;min-height:2.75rem;margin-right:auto;color:var(--basil-900);text-decoration:none}
-.brand:hover{color:var(--basil-900)}
-.brand__mark{width:2rem;height:2rem;color:var(--basil-700);stroke-width:1.5}
-.brand__name{display:block;font:italic 420 1.3125rem/1 var(--serif);letter-spacing:-.01em}
-.brand__sub{display:none;margin-top:.25rem;font:600 .6875rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
-.header-call{display:inline-flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;border:1px solid var(--line-strong);border-radius:50%;color:var(--basil-800)}
-.header-call:hover{background:var(--basil-100);color:var(--basil-900)}
-.menu-toggle{display:none}
-.js .menu-toggle{display:inline-flex;align-items:center;gap:.55rem;min-height:2.75rem;padding:0 1rem 0 .85rem;border:1px solid var(--basil-800);border-radius:999px;background:var(--basil-800);color:var(--cream-50);font:600 .9375rem/1 var(--sans);letter-spacing:.02em;cursor:pointer}
-.js .menu-toggle:hover{background:var(--basil-900)}
-.menu-toggle__icon{position:relative;width:1.125rem;height:.75rem}
-.menu-toggle__icon::before,.menu-toggle__icon::after{content:"";position:absolute;left:0;right:0;height:1.5px;border-radius:2px;background:currentColor;transition:transform .25s ease,top .25s ease}
-.menu-toggle__icon::before{top:.0625rem}
-.menu-toggle__icon::after{top:.5625rem}
-.menu-toggle[aria-expanded="true"] .menu-toggle__icon::before{top:.3125rem;transform:rotate(45deg)}
-.menu-toggle[aria-expanded="true"] .menu-toggle__icon::after{top:.3125rem;transform:rotate(-45deg)}
-.site-nav{flex-basis:100%;min-width:0}
-.nav-list{position:relative;display:flex;gap:.25rem;margin:0 calc(-1 * var(--gutter));padding:0 var(--gutter);list-style:none;overflow-x:auto;scrollbar-width:thin;counter-reset:rubrique}
-.nav-list a{position:relative;display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 .75rem;border-radius:999px;color:var(--ink);font:500 1rem/1 var(--sans);text-decoration:none;white-space:nowrap}
-.nav-list a:hover{background:var(--basil-100);color:var(--basil-900)}
-.nav-call a{border:1px solid var(--basil-800);color:var(--basil-900)}
-
-@media (max-width:63.99em){
-  .js .site-nav{display:none}
-  .js .site-nav.is-open{display:block;position:absolute;top:100%;left:0;right:0;max-height:calc(100vh - 4rem);max-height:calc(100dvh - 4rem);overflow-y:auto;background:var(--cream-50);border-bottom:1px solid var(--line);box-shadow:0 30px 40px -30px rgba(20,39,28,.35)}
-  .js .site-nav.is-open .nav-list{flex-direction:column;gap:0;margin:0;padding:.5rem var(--gutter) 1.5rem;overflow:visible}
-  .js .site-nav.is-open .nav-list a{display:flex;width:100%;min-height:3.5rem;padding:.5rem 0;border-radius:0;border-bottom:1px solid var(--line);color:var(--basil-900);font:400 1.5rem/1.2 var(--serif)}
-  .js .site-nav.is-open .nav-list a:hover{background:none;color:var(--tomato)}
-  .js .site-nav.is-open li:not(.nav-call) a::before{counter-increment:rubrique;content:"0" counter(rubrique);content:"0" counter(rubrique) / "";width:2.25rem;color:var(--tomato);font:italic 400 1rem/1 var(--serif)}
-  .js .site-nav.is-open .nav-call{margin-top:1.5rem}
-  .js .site-nav.is-open .nav-call a{justify-content:center;min-height:3rem;border:0;border-radius:999px;background:var(--basil-800);color:var(--cream-50);font:600 1rem/1 var(--sans)}
+/* ---------- En-tête ---------- */
+.entete{position:relative;z-index:40;background:rgb(247 240 225 / .96);border-bottom:1px solid rgb(31 58 43 / .1)}
+.js .entete{position:sticky;top:0}
+@supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+  .entete{background:rgb(247 240 225 / .86);-webkit-backdrop-filter:blur(12px) saturate(1.3);backdrop-filter:blur(12px) saturate(1.3)}
 }
-@media (min-width:30em){.brand__sub{display:block}}
+.entete__barre{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1rem;min-height:var(--entete-h);padding-block:.5rem}
+.js .entete__barre{flex-wrap:nowrap;padding-block:0}
 
-/* ============ Boutons ============ */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3rem;padding:.75rem 1.4rem;border:1px solid transparent;border-radius:999px;font:600 1rem/1.2 var(--sans);text-align:center;text-decoration:none;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
-.btn .i{width:1.125rem;height:1.125rem}
-.btn--primary{background:var(--basil-800);color:var(--cream-50)}
-.btn--primary:hover{background:var(--basil-950);color:var(--cream-50)}
-.btn--ghost{border-color:var(--basil-800);color:var(--basil-900)}
-.btn--ghost:hover{background:var(--basil-100);color:var(--basil-900)}
-.btn--light{background:var(--cream-100);color:var(--basil-900)}
-.btn--light:hover{background:var(--paper);color:var(--basil-950)}
-.btn--block{display:flex;width:100%}
-.text-link{display:inline-flex;align-items:center;min-height:2.75rem;font-weight:500}
+.logo{display:inline-flex;align-items:center;gap:.65rem;min-height:2.75rem;color:var(--basilic-900);text-decoration:none}
+.logo:hover{color:var(--basilic-900)}
+.logo__pastille{display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--basilic-800);color:var(--creme);--feuille-fond:var(--basilic-300);--feuille-opacite:1;box-shadow:inset 0 0 0 2px rgb(247 240 225 / .2), 0 4px 10px -4px rgb(31 58 43 / .5);transition:transform .3s ease}
+.logo:hover .logo__pastille{transform:rotate(-10deg)}
+.logo__pastille .feuille{width:1.65rem;height:1.65rem}
+.logo__texte{display:flex;flex-direction:column;line-height:1}
+.logo__nom{font-family:var(--police-titre);font-size:1.35rem;font-weight:650;letter-spacing:-.01em}
+.logo__sous{display:none;margin-top:.3rem;font-size:.75rem;font-weight:700;letter-spacing:.02em;color:var(--encre-douce)}
 
-/* ============ Rubriques ============ */
-.section{padding-block:clamp(4rem,11vw,7.5rem)}
-.section--tint{background:var(--cream-100)}
-.sec-head{max-width:46rem;margin-bottom:clamp(2.25rem,6vw,4rem)}
-.eyebrow{display:flex;align-items:center;gap:.75rem;color:var(--tomato);font:600 .8125rem/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase}
-.eyebrow__num{font:italic 400 1.0625rem/1 var(--serif);letter-spacing:0}
-.eyebrow::after{content:"";flex:0 0 3rem;height:1px;background:currentColor;opacity:.55}
-.sec-title{margin-top:.85rem;color:var(--basil-900);font-family:var(--serif);font-weight:360;font-size:clamp(2.75rem,11vw,5rem);line-height:.98;letter-spacing:-.03em;font-optical-sizing:auto}
-.chapo{margin-top:1rem;color:var(--ink-soft);font:italic 350 clamp(1.25rem,4.6vw,1.625rem)/1.35 var(--serif)}
-.lead{margin-top:1.25rem;max-width:38rem;font:400 1.1875rem/1.6 var(--serif)}
-.label{display:flex;align-items:center;gap:.75rem;margin-bottom:1.1rem;color:var(--basil-800);font:600 .8125rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase}
-.label::after{content:"";flex:1;height:1px;background:var(--line-strong)}
+.nav-bouton{display:none;align-items:center;justify-content:center;gap:.5rem;min-width:2.75rem;min-height:2.75rem;padding:.5rem .7rem;border:1.5px solid rgb(31 58 43 / .22);border-radius:999px;background:var(--creme-50);color:var(--basilic-900);font:700 1rem/1 var(--police-texte);cursor:pointer;transition:background-color .2s ease,border-color .2s ease}
+.nav-bouton:hover{background:var(--basilic-100);border-color:rgb(31 58 43 / .4)}
+.js .nav-bouton{display:inline-flex}
+.nav-bouton__libelle{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.nav-bouton .ic-croix{display:none}
+.nav-bouton[aria-expanded="true"] .ic-traits{display:none}
+.nav-bouton[aria-expanded="true"] .ic-croix{display:inline-block}
 
-/* ============ Emplacements photo ============ */
-.ph{margin:0}
-.ph__frame{position:relative;display:grid;place-items:center;aspect-ratio:var(--ratio,3/2);overflow:hidden;border-radius:3px;color:var(--basil-700);background:var(--leaf-pattern) center/72px 72px,radial-gradient(90% 70% at 18% 12%,rgba(255,253,247,.95),rgba(255,253,247,0) 60%),linear-gradient(158deg,var(--cream-200) 0%,#e2e5cf 58%,#c8d6bf 100%);box-shadow:inset 0 0 0 1px rgba(31,58,43,.08)}
-.ph--warm .ph__frame{color:#7d4431;background:var(--leaf-pattern) center/72px 72px,radial-gradient(90% 70% at 18% 12%,rgba(255,253,247,.95),rgba(255,253,247,0) 60%),linear-gradient(158deg,#f1e6d0 0%,#ecd8c1 60%,#dfc0a6 100%)}
-.ph--sun .ph__frame{background:radial-gradient(60% 55% at 88% 8%,rgba(248,214,150,.75),rgba(248,214,150,0) 70%),var(--leaf-pattern) center/72px 72px,linear-gradient(158deg,#f3ead6 0%,#e6e6cf 58%,#cad7c0 100%)}
-.ph__frame::before{content:"";position:absolute;inset:.75rem;border:1px solid rgba(31,58,43,.14);pointer-events:none}
-.ph__frame::after{--m:rgba(31,58,43,.42);content:"";position:absolute;inset:1.3rem;pointer-events:none;background:linear-gradient(var(--m),var(--m)) left top/1rem 1px,linear-gradient(var(--m),var(--m)) left top/1px 1rem,linear-gradient(var(--m),var(--m)) right top/1rem 1px,linear-gradient(var(--m),var(--m)) right top/1px 1rem,linear-gradient(var(--m),var(--m)) left bottom/1rem 1px,linear-gradient(var(--m),var(--m)) left bottom/1px 1rem,linear-gradient(var(--m),var(--m)) right bottom/1rem 1px,linear-gradient(var(--m),var(--m)) right bottom/1px 1rem;background-repeat:no-repeat}
-.i.ph__picto{position:relative;width:clamp(2.75rem,17%,4.75rem);height:auto;aspect-ratio:1;stroke-width:1.1;opacity:.8}
-.ph figcaption{margin-top:.8rem;color:var(--ink-soft);font:italic 400 1rem/1.45 var(--serif)}
-.ph__tag{color:var(--basil-700);font:normal 600 .75rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase}
-.ph--portrait{--ratio:3/4}
-.ph--square{--ratio:1/1}
+.nav{flex-basis:100%}
+.nav__liste{display:flex;flex-wrap:wrap;gap:.25rem}
+.nav__lien{display:flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.5rem .8rem;border-radius:.8rem;color:var(--basilic-900);font-weight:700;text-decoration:none;transition:background-color .2s ease,color .2s ease}
+.nav__lien:hover{background:var(--basilic-100);color:var(--basilic-900)}
+.nav__lien .feuille{display:none;width:1.1rem;height:1.1rem;color:var(--basilic-600);--feuille-opacite:.25}
+.nav__tel{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:.5rem 1rem;border-radius:999px;background:var(--basilic-800);color:var(--creme-50);font-weight:700;text-decoration:none}
+.nav__tel:hover{background:var(--basilic-900);color:var(--creme-50)}
 
-/* ============ Accueil ============ */
-.hero{padding-block:clamp(1.25rem,4vw,2.5rem) clamp(3.5rem,9vw,6rem)}
-.masthead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.2rem 1rem;padding-block:.6rem;border-top:3px double var(--basil-900);border-bottom:1px solid var(--basil-900);color:var(--basil-800);font:600 .75rem/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase}
-.hero__grid{display:grid;gap:3rem;margin-top:clamp(2rem,6vw,3.5rem)}
-.hero__kicker{color:var(--tomato);font:600 .8125rem/1.3 var(--sans);letter-spacing:.22em;text-transform:uppercase}
-.hero__title{margin-top:.9rem;color:var(--basil-900);font-family:var(--serif);font-weight:330;font-size:clamp(4rem,20vw,9.25rem);line-height:.86;letter-spacing:-.035em;font-optical-sizing:auto}
-.hero__le{display:block;margin:0 0 .14em .05em;color:var(--basil-600);font-style:italic;font-weight:400;font-size:.36em;line-height:1;letter-spacing:-.01em}
-.hero__lede{margin-top:1.6rem;max-width:34rem;font:400 1.1875rem/1.55 var(--serif)}
-.hero__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
-.hero__actions .btn{flex:1 1 100%}
-.hero__media{position:relative}
-.seal{position:absolute;top:-2.6rem;right:.5rem;width:5.75rem;height:5.75rem;color:var(--basil-800);filter:drop-shadow(0 8px 14px rgba(20,39,28,.12))}
-.seal__bg{fill:var(--paper);stroke:var(--basil-800);stroke-width:.6}
-.seal__inner{fill:none;stroke:var(--basil-800);stroke-width:.4;stroke-dasharray:1 1.6}
-.seal text{fill:var(--basil-800);font:600 7.2px var(--sans);letter-spacing:.06em}
-.seal__leaf{fill:none;stroke:var(--basil-700);stroke-width:1.3}
-.seal__ring{transform-origin:50px 50px}
-@media (prefers-reduced-motion:no-preference){.seal__ring{animation:tourne 48s linear infinite}}
-@keyframes tourne{to{transform:rotate(360deg)}}
+/* Panneau déroulant (avec JS, sur mobile) : défile s'il dépasse l'écran */
+.js .nav{position:absolute;top:100%;left:0;right:0;max-height:calc(100vh - 4rem);max-height:calc(100dvh - 4rem);overflow-y:auto;overscroll-behavior:contain;padding:.5rem 1rem 1.25rem;background:var(--creme-50);border-bottom:1px solid rgb(31 58 43 / .12);box-shadow:0 22px 30px -20px rgb(31 58 43 / .5);visibility:hidden;opacity:0;transform:translateY(-.5rem);transition:opacity .2s ease,transform .2s ease,visibility 0s linear .2s}
+.js .nav.est-ouvert{visibility:visible;opacity:1;transform:none;transition:opacity .2s ease,transform .2s ease}
+.js .nav__liste{flex-direction:column;flex-wrap:nowrap;gap:0;width:min(100%, 40rem);margin-inline:auto}
+.js .nav__lien{min-height:3.25rem;padding-inline:.25rem;border-radius:0;border-bottom:1px dashed rgb(31 58 43 / .18);font-family:var(--police-titre);font-size:1.3rem;font-weight:600}
+.js .nav__lien:hover{background:none;color:var(--basilic-600)}
+.js .nav__lien .feuille{display:block}
+.js .nav__lien[aria-current] .feuille{--feuille-opacite:1;--feuille-fond:var(--basilic-500)}
+.js .nav__tel{justify-content:center;width:100%;min-height:3rem;margin-top:1rem}
 
-.toc{margin-top:clamp(3rem,8vw,5rem);border-top:1px solid var(--basil-900)}
-.toc__title{padding-block:1rem .25rem;color:var(--basil-800);font:600 .8125rem/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase}
-.toc ol{display:grid;margin:0;padding:0;list-style:none}
-.toc a{display:grid;grid-template-columns:2.5rem minmax(0,1fr) auto;align-items:baseline;gap:.1rem .75rem;padding:1.1rem 0;border-bottom:1px solid var(--line);color:inherit;text-decoration:none}
-.toc__num{grid-row:span 2;color:var(--tomato);font:italic 400 1.25rem/1.2 var(--serif)}
-.toc__name{color:var(--basil-900);font:400 1.4375rem/1.2 var(--serif);transition:color .2s ease}
-.toc__desc{grid-column:2;color:var(--ink-soft);font-size:1rem;line-height:1.45}
-.toc .i{grid-column:3;grid-row:1 / span 2;align-self:center;color:var(--basil-700);transition:transform .25s ease}
-.toc a:hover .toc__name{color:var(--tomato)}
-.toc a:hover .i{transform:translateX(4px)}
+/* ---------- Boutons ---------- */
+.bouton{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3rem;padding:.75rem 1.4rem;border-radius:999px;font-weight:700;font-size:1rem;line-height:1.2;text-align:center;text-decoration:none;transition:background-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease}
+.bouton--plein{background:var(--basilic-800);color:var(--creme-50);box-shadow:inset 0 1px 0 rgb(255 255 255 / .12), 0 10px 20px -12px rgb(31 58 43 / .8)}
+.bouton--plein:hover{background:var(--basilic-900);color:var(--creme-50);transform:translateY(-1px)}
+.bouton--contour{border:2px solid rgb(39 74 54 / .55);color:var(--basilic-800);background:rgb(253 250 243 / .6)}
+.bouton--contour:hover{border-color:var(--basilic-800);background:var(--basilic-100);color:var(--basilic-900)}
+.bouton--creme{background:var(--creme);color:var(--basilic-900);text-shadow:none}
+.bouton--creme:hover{background:var(--creme-50);color:var(--basilic-900);transform:translateY(-1px)}
 
-/* ============ Hôtel ============ */
-.hotel-grid{display:grid;gap:2.75rem}
-.hotel-details{display:grid;gap:2.75rem}
-.rooms{margin:0;padding:0;list-style:none;border-top:1px solid var(--line-strong)}
-.room{display:grid;grid-template-columns:3rem minmax(0,1fr);align-items:baseline;gap:0 1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
-.room__qty{color:var(--tomato);font:300 2.75rem/1 var(--serif);font-variant-numeric:lining-nums}
-.room__name{color:var(--basil-900);font:400 1.375rem/1.25 var(--serif)}
-.room__detail{display:block;margin-top:.3rem;color:var(--ink-soft);font:400 1rem/1.45 var(--sans)}
-.amenities{display:grid;gap:.9rem;margin:0;padding:0;list-style:none}
-.amenities li{display:flex;align-items:center;gap:.9rem;line-height:1.35}
-.amenity__ico{display:grid;place-items:center;flex:none;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--basil-100);color:var(--basil-800)}
-.note{margin-top:1.5rem;color:var(--ink-soft);font-size:1rem}
+/* ---------- Titres de section ---------- */
+.section{padding-block:clamp(3.75rem, 10vw, 6.5rem)}
+.tete{max-width:42rem;margin-bottom:clamp(2rem, 5vw, 3rem)}
+.surtitre{display:flex;width:fit-content;align-items:center;gap:.45rem;margin-bottom:.35rem;font-family:var(--police-craie);font-size:1.65rem;font-weight:600;line-height:1.1;color:var(--tomate);transform:rotate(-2deg);transform-origin:left center}
+.surtitre .feuille{width:1.5rem;height:1.5rem;color:var(--basilic-600);--feuille-opacite:.3}
+.tete h2{position:relative;display:inline-block;padding-bottom:.55rem;font-size:clamp(2.35rem, 6vw + 1rem, 3.5rem);letter-spacing:-.02em}
+.tete h2::after{content:"";position:absolute;left:.05em;bottom:0;width:5.5rem;height:.55rem;background:var(--trait) left center/100% 100% no-repeat}
+.chapo{margin-top:1.1rem;font-size:1.125rem;line-height:1.6}
 
-/* Carte (tarifs, horaires) */
-.carte{position:relative;padding:2rem 1.5rem 1.75rem;border:1px solid var(--basil-700);background:var(--paper);box-shadow:inset 0 0 0 5px var(--paper),inset 0 0 0 6px rgba(47,90,63,.4),0 22px 40px -30px rgba(20,39,28,.45)}
-.carte__head{text-align:center}
-.carte__orn{display:flex;align-items:center;justify-content:center;gap:.75rem;color:var(--basil-600)}
-.carte__orn::before,.carte__orn::after{content:"";width:2.5rem;height:1px;background:var(--line-strong)}
-.carte__orn .i{width:1.1rem;height:1.1rem}
-.carte__title{margin-top:.5rem;color:var(--basil-900);font:italic 400 2rem/1.1 var(--serif)}
-.carte__group{margin-top:1.4rem;color:var(--basil-800);font:600 .75rem/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-align:center}
-.carte__list{margin-top:.5rem}
-.carte__row{display:flex;align-items:baseline;gap:.5rem;padding:.4rem 0}
-.carte__row dt{display:flex;flex:1;align-items:baseline;gap:.5rem;font:400 1.0625rem/1.4 var(--sans)}
-.carte__row dt::after{content:"";flex:1;min-width:1rem;border-bottom:1.5px dotted rgba(31,58,43,.38);transform:translateY(-.3em)}
-.carte__row dd{color:var(--basil-900);font:500 1.3125rem/1.2 var(--serif);white-space:nowrap;font-variant-numeric:lining-nums tabular-nums}
-.carte__sep{height:1px;margin:1.1rem auto 0;width:60%;background:var(--line-strong)}
-.carte__foot{margin-top:1.6rem;text-align:center}
-.carte__foot p{margin-bottom:.75rem;color:var(--ink-soft);font:italic 400 1rem/1.4 var(--serif)}
-.carte__foot .text-link{margin-top:.25rem}
+/* ---------- Emplacements photo (à fournir) ---------- */
+.photo{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:4/3;border-radius:var(--rayon);
+  background:
+    var(--motif) 0 0/96px 96px,
+    radial-gradient(120% 90% at 18% 12%, rgb(253 250 243 / .95) 0%, transparent 58%),
+    radial-gradient(90% 80% at 88% 92%, rgb(90 143 95 / .32), transparent 70%),
+    linear-gradient(160deg, var(--creme-200), var(--basilic-100) 55%, var(--basilic-200));
+  box-shadow:inset 0 0 0 1px rgb(31 58 43 / .08), var(--ombre)}
+.photo::before{content:"";position:absolute;inset:.6rem;z-index:-1;border:1.5px dashed rgb(47 93 67 / .26);border-radius:inherit}
+.photo__art{position:absolute;inset:0;z-index:-1;display:grid;place-items:center;color:var(--basilic-700)}
+.photo__art .photo__picto{width:min(24%, 5.5rem);height:auto;aspect-ratio:1;stroke-width:1.1;opacity:.7;transform:translateY(-14%)}
+.photo figcaption{position:absolute;left:.85rem;right:.85rem;bottom:.85rem;display:flex;align-items:flex-start;gap:.55rem;padding:.55rem .85rem;border-radius:.9rem;background:rgb(253 250 243 / .94);color:var(--encre);font-size:1rem;line-height:1.35;box-shadow:0 6px 14px -8px rgb(31 58 43 / .45)}
+.photo figcaption .ic{width:1.1rem;height:1.1rem;margin-top:.1rem;color:var(--basilic-600)}
+.photo__mention{font-weight:700;color:var(--basilic-800)}
 
-/* ============ Restaurant ============ */
-.resto-grid{display:grid;gap:2.75rem}
-.dropcap{font:400 1.1875rem/1.65 var(--serif)}
-.dropcap::first-letter{float:left;margin:.07em .12em 0 -.02em;color:var(--basil-700);font-size:3.9em;font-weight:400;line-height:.82}
-.sources{margin:2.25rem 0 0;padding:0;list-style:none;border-top:1px solid var(--line-strong)}
-.source{display:grid;grid-template-columns:2.5rem minmax(0,1fr);gap:.2rem 1rem;padding:1.25rem 0;border-bottom:1px solid var(--line)}
-.source__num{grid-row:span 2;color:var(--tomato);font:italic 400 1.375rem/1.25 var(--serif)}
-.source h3{color:var(--basil-900);font:450 1.375rem/1.25 var(--serif)}
-.source p{color:var(--ink-soft)}
-.resto-photos{display:grid;gap:2rem;margin-top:clamp(2.75rem,7vw,4.5rem)}
-.services{display:grid;gap:2rem;margin-top:clamp(2.75rem,7vw,4.5rem);padding-block:2rem;border-top:3px double var(--basil-900);border-bottom:1px solid var(--basil-900)}
-.services__list{display:grid;gap:1rem;margin:0;padding:0;list-style:none}
-.services__list li{display:flex;align-items:center;gap:.9rem;color:var(--basil-900);font:400 1.375rem/1.2 var(--serif)}
-.price-tag{display:grid;place-content:center;justify-self:center;width:9rem;height:9rem;border:1px solid var(--basil-800);border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 4px var(--paper),inset 0 0 0 5px rgba(38,71,51,.45);color:var(--basil-900);text-align:center;transform:rotate(-6deg)}
-.price-tag__label{color:var(--tomato);font:600 .75rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase}
-.price-tag__value{margin:.3rem 0 .15rem;font:400 2.5rem/1 var(--serif);white-space:nowrap}
-.price-tag__unit{color:var(--ink-soft);font:italic 400 1rem/1 var(--serif)}
+/* ---------- Accueil ---------- */
+.accueil{position:relative;overflow-x:clip;padding-block:2.25rem 3.75rem;
+  background:
+    radial-gradient(55rem 28rem at 100% 0%, rgb(90 143 95 / .17), transparent 62%),
+    radial-gradient(38rem 24rem at 0% 100%, rgb(168 63 37 / .06), transparent 62%)}
+.accueil__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2.75rem;align-items:center}
+.accueil__pastille{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .95rem;border-radius:999px;background:var(--creme-50);border:1px solid rgb(31 58 43 / .12);font-size:.8125rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--basilic-800)}
+.accueil__titre{margin-top:1.1rem;font-size:clamp(3.6rem, 16vw, 7.25rem);font-weight:650;line-height:.9;letter-spacing:-.035em}
+.accueil__le{display:block;margin:0 0 .02em .08em;font-family:var(--police-craie);font-size:.4em;font-weight:600;letter-spacing:0;line-height:1;color:var(--tomate);transform:rotate(-5deg);transform-origin:left bottom}
+.accueil__lieu{display:flex;align-items:center;gap:.5rem;margin-top:1.1rem;font-weight:700;color:var(--basilic-800)}
+.accueil__lieu .ic{color:var(--tomate)}
+.accueil__intro{max-width:34rem;margin-top:1.25rem;font-size:1.125rem;line-height:1.65}
+.accueil__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.accueil__actions .bouton{flex:1 1 100%}
+.accueil__fiche{display:grid;gap:.85rem;max-width:34rem;margin-top:1.75rem;padding-top:1.25rem;border-top:1.5px dashed rgb(31 58 43 / .2);color:var(--encre-douce)}
+.accueil__adresse{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem}
+.accueil__ou{display:inline-flex;align-items:center;gap:.5rem}
+.accueil__fiche .ic{width:1.1rem;height:1.1rem;color:var(--basilic-600)}
+.accueil__itineraire{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;padding:0 1rem;border-radius:999px;background:var(--basilic-100);color:var(--basilic-900);font-weight:700;text-decoration:none;transition:background-color .2s ease}
+.accueil__itineraire:hover{background:var(--basilic-200);color:var(--basilic-900)}
+.accueil__fiche .accueil__itineraire .ic{color:var(--basilic-800)}
+.accueil__horaires{display:flex;align-items:flex-start;gap:.5rem}
+.accueil__horaires .ic{margin-top:.25rem}
+.accueil__confirmer{display:inline-block;font-weight:700;color:var(--tomate)}
 
-/* ============ Infos pratiques ============ */
-.infos-grid{display:grid;gap:2.75rem}
-.info-block{padding-top:1.25rem;border-top:2px solid var(--basil-900)}
-.info-block h3{display:flex;align-items:center;gap:.6rem;color:var(--basil-900);font:450 1.5rem/1.2 var(--serif)}
-.info-block h3 .i{color:var(--tomato)}
-.info-block p{margin-top:.75rem}
-.info-block .btn{margin-top:1.25rem}
-.info-muted{color:var(--ink-soft)}
-.info-addr{margin-top:.75rem;font:400 1.25rem/1.45 var(--serif)}
-.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 0;padding:0;list-style:none}
-.chips li{padding:.45rem .95rem;border:1px solid var(--line-strong);border-radius:999px;background:var(--cream-50);font-size:1rem;font-weight:500}
-.tag-note{display:inline-flex;align-items:center;gap:.45rem;margin-top:.9rem;padding:.35rem .8rem;border-radius:999px;background:var(--cream-200);color:var(--ink-soft);font:500 1rem/1.3 var(--sans)}
-.tag-note .i{width:1rem;height:1rem}
-.hours{width:100%;margin-top:1.25rem;border-collapse:collapse;text-align:left}
-.hours th,.hours td{padding:.7rem .65rem;border-bottom:1px dotted rgba(31,58,43,.35)}
-.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
-.hours th{font:500 1.0625rem/1.3 var(--sans)}
-.hours td{color:var(--basil-900);font:450 1.1875rem/1.3 var(--serif);text-align:right;white-space:nowrap;font-variant-numeric:lining-nums tabular-nums}
-.hours .closed td{color:var(--ink-soft);font-style:italic;font-weight:400}
-.hours tr.is-today{background:var(--basil-100)}
-.hours tr.is-today th{font-weight:600}
-.today{display:inline-block;margin-left:.5rem;padding:.2em .6em;border-radius:999px;background:var(--basil-800);color:var(--cream-50);font:600 .6875rem/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;vertical-align:.12em}
+.accueil__visuel{position:relative;width:100%;max-width:25rem;margin-inline:auto;padding:0 .75rem 1.25rem 1.5rem}
+.photo--arche{aspect-ratio:1/1;border-radius:50% 50% var(--rayon) var(--rayon) / 50% 50% var(--rayon) var(--rayon);box-shadow:inset 0 0 0 1px rgb(31 58 43 / .08), 0 30px 50px -30px rgb(31 58 43 / .55)}
+.photo--arche::before{inset:.7rem}
+.photo--arche .photo__art .photo__picto{width:min(30%, 6.5rem)}
+.photo--arche figcaption{left:3rem}
+.brin{position:absolute;left:-.35rem;bottom:-.2rem;width:4.75rem;height:auto;aspect-ratio:112/237;color:var(--basilic-800);--feuille-fond:var(--basilic-500);--feuille-opacite:.9;filter:drop-shadow(0 8px 8px rgb(31 58 43 / .2));pointer-events:none}
+.tampon{position:absolute;top:.5rem;right:-.25rem;width:6.25rem;height:6.25rem;transform:rotate(12deg);filter:drop-shadow(0 8px 10px rgb(90 30 15 / .28));pointer-events:none;--feuille-fond:var(--creme);--feuille-opacite:.25}
+.tampon__fond{fill:var(--tomate)}
+.tampon__filet{fill:none;stroke:var(--creme);stroke-opacity:.55;stroke-width:1.2;stroke-dasharray:3 3}
+.tampon__texte{font-family:var(--police-texte);font-weight:700;font-size:10.5px;letter-spacing:.06em;fill:var(--creme)}
+.tampon use{color:var(--creme)}
 
-/* ============ Contact ============ */
-.section--dark{position:relative;overflow:hidden;background:var(--basil-900);color:var(--cream-100);--focus:#f2c9a0;--line:rgba(246,240,227,.16);--line-strong:rgba(246,240,227,.3)}
-.section--dark .eyebrow{color:var(--tomato-light)}
-.section--dark .sec-title{color:var(--cream-50)}
-.section--dark .chapo{color:var(--basil-200)}
-.section--dark .lead{color:var(--cream-100)}
-.contact-sprig{position:absolute;right:-4rem;bottom:-3rem;width:22rem;height:22rem;color:var(--basil-200);opacity:.09;stroke-width:.35;pointer-events:none}
-.contact-grid{position:relative;display:grid;gap:2.5rem}
-.contact-grid .sec-head{margin-bottom:0}
-.contact-list{margin:0;border-top:1px solid var(--line-strong)}
-.contact-list > div{display:grid;gap:.4rem;padding:1.5rem 0;border-bottom:1px solid var(--line-strong)}
-.contact-list dt{display:flex;align-items:center;gap:.6rem;color:var(--basil-200);font:600 .8125rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase}
-.contact-list dd a:not(.btn){color:var(--cream-50);text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:.18em;transition:text-decoration-color .25s ease}
-.contact-list dd a:not(.btn):hover{text-decoration-color:currentColor}
-.contact-tel{display:inline-flex;align-items:center;min-height:2.75rem;font:350 clamp(2.25rem,10vw,3.75rem)/1.1 var(--serif);letter-spacing:-.01em;white-space:nowrap}
-.contact-mail{display:inline-block;padding-block:.55rem;font:400 clamp(1.125rem,4.4vw,1.5rem)/1.5 var(--serif);overflow-wrap:anywhere}
-.contact-addr{font:400 1.25rem/1.45 var(--serif);color:var(--cream-50)}
-.contact-list .btn{justify-self:start;margin-top:.75rem}
+.trio{display:grid;grid-template-columns:minmax(0,1fr);gap:.85rem;margin-top:2.75rem}
+.trio__lien{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.15rem 1rem;height:100%;padding:1rem 1.1rem;border-radius:var(--rayon);background:var(--creme-50);border:1px solid rgb(31 58 43 / .1);box-shadow:var(--ombre);color:var(--encre);text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.trio__lien:hover{color:var(--encre);border-color:rgb(31 58 43 / .28);transform:translateY(-2px);box-shadow:0 1px 2px rgb(31 58 43 / .06), 0 18px 30px -18px rgb(31 58 43 / .45)}
+.trio__icone{grid-row:1 / span 2;display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--basilic-100);color:var(--basilic-800)}
+.trio__icone .ic{width:1.45rem;height:1.45rem}
+.trio__titre{font-family:var(--police-titre);font-size:1.25rem;font-weight:600;line-height:1.2;color:var(--basilic-900)}
+.trio__texte{grid-column:2;color:var(--encre-douce);line-height:1.45}
+.trio__fleche{display:none;grid-column:3;grid-row:1 / span 2;color:var(--basilic-600);transition:transform .2s ease}
+.trio__lien:hover .trio__fleche{transform:translateY(3px)}
 
-/* ============ Pied de page ============ */
-.site-footer{padding-block:3rem 2rem;background:var(--basil-950);color:var(--basil-200);font-size:1rem;--focus:#f2c9a0}
-.footer-grid{display:grid;gap:1.5rem}
-.footer-brand{display:flex;align-items:center;gap:.6rem;color:var(--cream-50);font:italic 420 1.625rem/1 var(--serif)}
-.footer-brand .i{width:2rem;height:2rem;color:var(--basil-200);stroke-width:1.4}
-.site-footer a{display:inline-flex;align-items:center;gap:.45rem;min-height:2.75rem;color:var(--cream-100);overflow-wrap:anywhere}
-.site-footer a:hover{color:var(--paper)}
-.footer-addr{margin-top:.6rem}
-.footer-legal{margin-top:2rem;padding-top:1.25rem;border-top:1px solid rgba(246,240,227,.14);font-size:1rem;line-height:1.55}
+/* ---------- Hôtel ---------- */
+.hotel__photos{display:grid;gap:1rem;margin-bottom:2.5rem}
+.hotel__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem}
+.chambres{display:grid;gap:.85rem}
+.chambre{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:.2rem 1rem;padding:1.15rem 1.2rem;border-radius:var(--rayon);background:var(--creme-50);border:1px solid rgb(31 58 43 / .1);box-shadow:var(--ombre)}
+.chambre__icone{grid-row:1 / span 3;display:grid;place-items:center;width:3.25rem;height:3.25rem;border-radius:1rem;background:var(--basilic-100);color:var(--basilic-800)}
+.chambre__icone .ic{width:1.75rem;height:1.75rem}
+.chambre h3{font-size:1.3rem}
+.chambre__nombre{justify-self:start;padding:0 .65rem;border-radius:999px;background:rgb(168 63 37 / .09);font-size:1rem;font-weight:700;color:var(--tomate)}
+.chambre__detail{color:var(--encre-douce)}
+.chambre--famille{background:linear-gradient(135deg, var(--creme-50), var(--basilic-100));border-color:rgb(47 93 67 / .22)}
+.chambre--famille .chambre__icone{background:var(--basilic-800);color:var(--creme)}
 
-/* ============ Tablette ============ */
-@media (min-width:36em){
-  .hero__actions .btn{flex:0 0 auto}
-  .resto-photos{grid-template-columns:1fr 1fr}
+.equipements h3{margin-bottom:1rem;font-size:1.45rem}
+.equipements ul{display:grid;gap:.6rem}
+.equipements li{display:flex;align-items:center;gap:.75rem;min-height:3rem;padding:.55rem .9rem;border-radius:.9rem;background:rgb(253 250 243 / .75);border:1px dashed rgb(31 58 43 / .22)}
+.equipements .ic{width:1.5rem;height:1.5rem;color:var(--basilic-700)}
+
+/* ---------- Ardoise (tarifs & horaires) ---------- */
+.ardoise{position:relative;padding:.6rem;border-radius:1.6rem;
+  background:
+    repeating-linear-gradient(97deg, rgb(255 255 255 / .07) 0 2px, transparent 2px 7px),
+    repeating-linear-gradient(97deg, rgb(0 0 0 / .05) 0 1px, transparent 1px 11px),
+    linear-gradient(135deg, var(--bois-clair), var(--bois) 52%, var(--bois-moyen));
+  box-shadow:inset 0 1px 0 rgb(255 255 255 / .35), inset 0 -2px 0 rgb(0 0 0 / .18), 0 26px 44px -26px rgb(40 28 12 / .6)}
+.ardoise__tableau{position:relative;height:100%;padding:1.75rem 1.35rem 1.6rem;border-radius:1.1rem;color:var(--craie);text-shadow:0 0 1px rgb(243 239 228 / .3);
+  background:
+    radial-gradient(110% 70% at 15% 0%, rgb(255 255 255 / .08), transparent 55%),
+    radial-gradient(70% 50% at 95% 95%, rgb(255 255 255 / .06), transparent 60%),
+    repeating-linear-gradient(-35deg, rgb(255 255 255 / .018) 0 3px, transparent 3px 9px),
+    var(--ardoise);
+  box-shadow:inset 0 2px 16px rgb(0 0 0 / .55), inset 0 0 0 1px rgb(0 0 0 / .45)}
+.ardoise__doodle{position:absolute;top:1rem;right:1rem;width:3.25rem;height:3.25rem;color:var(--craie);opacity:.4;--feuille-opacite:0;transform:rotate(18deg)}
+.ardoise h3{display:inline-block;padding-bottom:.5rem;font-family:var(--police-craie);font-size:2.6rem;font-weight:600;line-height:1;color:var(--craie);background:var(--trait-craie) left bottom/6.5rem .5rem no-repeat}
+.ardoise__groupe{margin-top:1.4rem;font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--basilic-300)}
+.prix{margin-top:.35rem}
+.prix div{display:flex;flex-wrap:wrap;align-items:baseline;gap:.6rem;padding-block:.35rem}
+.prix dt{display:flex;flex:1;align-items:baseline;gap:.6rem;font-size:1.0625rem;color:var(--craie-douce)}
+.prix dt::after{content:"";flex:1;min-width:1rem;border-bottom:2px dotted rgb(243 239 228 / .32);transform:translateY(-.3em)}
+.prix dd{margin-left:auto;font-family:var(--police-titre);font-size:1.5rem;font-weight:600;line-height:1;color:var(--craie)}
+.ardoise__trait{height:2px;margin:1.1rem 0 .4rem;border:0;border-radius:2px;background:repeating-linear-gradient(90deg, rgb(243 239 228 / .32) 0 12px, transparent 12px 19px)}
+.ardoise__pied{margin-top:1.5rem;padding-top:1.25rem;border-top:1px dashed rgb(243 239 228 / .25);color:var(--craie-douce)}
+.ardoise__pied .bouton{width:100%;margin-top:.75rem;padding-inline:1rem}
+.ardoise__mail{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;margin-top:.35rem;color:var(--craie);font-weight:700;text-decoration-color:rgb(243 239 228 / .55)}
+.ardoise__mail:hover{color:#fff}
+.ardoise__mail .ic{width:1.1rem;height:1.1rem}
+.ardoise :focus-visible{outline-color:var(--craie)}
+.ardoise__alerte{display:inline-block;margin-top:.35rem;font-family:var(--police-craie);font-size:1.6rem;font-weight:600;line-height:1.1;color:var(--tomate-clair);transform:rotate(-1.5deg)}
+
+.horaires{width:100%;margin-top:1rem;border-collapse:collapse}
+.horaires th,.horaires td{padding:.55rem .35rem;border-bottom:1px dashed rgb(243 239 228 / .2);text-align:left;font-weight:400}
+.horaires tr:last-child th,.horaires tr:last-child td{border-bottom:0}
+.horaires th{font-size:1.0625rem;color:var(--craie-douce)}
+.horaires td{font-family:var(--police-titre);font-size:1.25rem;font-weight:600;line-height:1.2;text-align:right;color:var(--craie)}
+.horaires .ferme td{color:var(--tomate-clair)}
+.horaires .aujourdhui{background:rgb(243 239 228 / .08)}
+.horaires .aujourdhui th{font-weight:700;color:var(--craie)}
+.aujourdhui__mot{display:inline-block;margin-left:.5rem;font-family:var(--police-craie);font-size:1.3rem;font-weight:600;line-height:1;color:var(--tomate-clair);transform:rotate(-3deg)}
+
+/* ---------- Restaurant ---------- */
+.restaurant{background-color:var(--creme-200);background-image:var(--lin);border-block:1px solid rgb(31 58 43 / .08)}
+.mini-ardoise{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:.75rem;margin-top:1.6rem;padding:.6rem 1.15rem .65rem;border-radius:.8rem;background:var(--ardoise);color:var(--craie);box-shadow:0 0 0 5px var(--bois), 0 0 0 6px rgb(0 0 0 / .15), 0 14px 22px -12px rgb(40 28 12 / .6);transform:rotate(-1.5deg)}
+.mini-ardoise__nom{font-weight:700;color:var(--craie-douce)}
+.mini-ardoise__prix{font-family:var(--police-titre);font-size:1.4rem;font-weight:600;line-height:1}
+.restaurant__entete{margin-bottom:2.5rem}
+.restaurant__entete .tete{margin-bottom:0}
+.restaurant__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem}
+.produits{display:grid;gap:1rem}
+.produit{position:relative;display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.15rem 1rem;padding:1.3rem 1.35rem;border-radius:var(--rayon);background:var(--creme-50);box-shadow:var(--ombre)}
+.produit::before{content:"";position:absolute;inset:.4rem;border:1.5px dashed rgb(47 93 67 / .22);border-radius:calc(var(--rayon) - .35rem);pointer-events:none}
+.produit__icone{grid-row:1 / span 2;display:grid;place-items:center;width:3.25rem;height:3.25rem;border-radius:50%;background:var(--basilic-100);color:var(--basilic-800)}
+.produit__icone .ic{width:1.6rem;height:1.6rem}
+.produit h3{font-size:1.3rem}
+.produit p{color:var(--encre-douce)}
+.produit strong{color:var(--basilic-800)}
+
+.aussi{margin-top:clamp(3rem, 8vw, 4.5rem)}
+.aussi__titre{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .75rem;margin-bottom:1.25rem;font-size:clamp(1.5rem, 3vw + .9rem, 2rem)}
+.aussi__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.emporter{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:.5rem;padding:1.6rem 1.5rem;border-radius:var(--rayon);background:var(--basilic-800);background-image:var(--motif-creme);background-size:96px 96px;color:var(--creme);box-shadow:var(--ombre)}
+.emporter__icone{display:grid;place-items:center;width:3.25rem;height:3.25rem;margin-bottom:.35rem;border-radius:50%;background:var(--creme);color:var(--basilic-900)}
+.emporter__icone .ic{width:1.6rem;height:1.6rem}
+.emporter h4{font-size:1.45rem;color:var(--creme-50)}
+.emporter p{color:#dfe5d8}
+.emporter .bouton{margin-top:.6rem;padding-inline:1.2rem}
+.emporter :focus-visible{outline-color:var(--creme)}
+
+/* ---------- Infos pratiques ---------- */
+.infos__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}
+.carte-info{padding:1.4rem 1.4rem 1.5rem;border-radius:var(--rayon);background:var(--creme-50);border:1px solid rgb(31 58 43 / .1);box-shadow:var(--ombre)}
+.carte-info__tete{display:flex;align-items:center;gap:.8rem;margin-bottom:.85rem}
+.rond{display:grid;place-items:center;flex:none;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--basilic-100);color:var(--basilic-800)}
+.rond .ic{width:1.35rem;height:1.35rem}
+.carte-info h3{font-size:1.3rem}
+.carte-info address{font-size:1.125rem;font-weight:700;line-height:1.45;color:var(--basilic-900)}
+.carte-info__note{margin-top:.25rem;color:var(--encre-douce)}
+.carte-info .bouton{margin-top:1.1rem}
+.puces{display:flex;flex-wrap:wrap;gap:.5rem}
+.puces li{display:inline-flex;align-items:center;gap:.45rem;padding:.4rem .95rem;border-radius:999px;background:var(--basilic-100);color:var(--basilic-900);font-weight:700}
+.puces .ic{width:1.1rem;height:1.1rem;color:var(--basilic-700)}
+
+/* ---------- Contact ---------- */
+.contact{position:relative;margin-top:12px;background-color:var(--basilic-900);background-image:var(--motif-creme), radial-gradient(50rem 26rem at 100% 0%, rgb(90 143 95 / .25), transparent 60%);background-size:96px 96px, auto;color:var(--creme)}
+.contact::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:12px;background:radial-gradient(circle at 11px 12px, var(--basilic-900) 10.5px, transparent 11.5px) 0 0/22px 12px repeat-x}
+.contact .tete h2{color:var(--creme-50)}
+.contact .tete h2::after{background-image:var(--trait-clair)}
+.contact .surtitre{color:var(--tomate-clair)}
+.contact .surtitre .feuille{color:var(--basilic-300)}
+.contact .chapo{color:#e3e8dc}
+.contact :focus-visible{outline-color:var(--creme)}
+.contact__cartes{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.contact-carte{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;height:100%;padding:1.5rem 1.4rem;border-radius:var(--rayon);background:rgb(247 240 225 / .06);border:1px solid rgb(247 240 225 / .18);color:var(--creme);text-decoration:none;transition:background-color .2s ease,border-color .2s ease,transform .2s ease}
+a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);border-color:rgb(247 240 225 / .4);transform:translateY(-2px)}
+.contact-carte__icone{display:grid;place-items:center;width:3rem;height:3rem;margin-bottom:.6rem;border-radius:50%;background:var(--creme);color:var(--basilic-900)}
+.contact-carte__icone .ic{width:1.4rem;height:1.4rem}
+.contact-carte__type{font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--basilic-300)}
+.contact-carte__valeur{font-family:var(--police-titre);font-size:1.6rem;font-weight:600;line-height:1.2;color:var(--creme-50)}
+.contact-carte__valeur--mail{font-family:var(--police-texte);font-size:1.125rem;font-weight:700;overflow-wrap:anywhere}
+.contact-carte__action{display:inline-flex;align-items:center;gap:.45rem;margin-top:auto;padding-top:1rem;font-weight:700;color:var(--tomate-clair)}
+.contact-carte__action .ic{width:1.1rem;height:1.1rem}
+.contact-carte .bouton{margin-top:auto}
+.contact-carte__espace{flex:1;min-height:.9rem}
+
+/* ---------- Pied de page ---------- */
+.pied{padding-block:3rem calc(1.5rem + var(--barre-h) + env(safe-area-inset-bottom, 0px));background:var(--basilic-950);color:#cfd6c9;border-top:1px solid rgb(247 240 225 / .08)}
+.pied a{color:var(--creme-50)}
+.pied a:hover{color:#fff}
+.pied :focus-visible{outline-color:var(--creme)}
+.pied__grille{display:grid;gap:2rem}
+.pied .logo{color:var(--creme-50)}
+.pied .logo__sous{color:#aeb8aa}
+.pied__texte{margin-top:.9rem;max-width:22rem}
+.pied__titre{margin-bottom:.5rem;font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--basilic-300)}
+.pied__liens a{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;text-decoration:none}
+.pied__liens a:hover{text-decoration:underline}
+.pied__liens .ic{width:1.1rem;height:1.1rem;color:var(--basilic-300)}
+.pied__bas{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid rgb(247 240 225 / .12);font-size:1rem;color:#b9c2b5}
+.pied__bas p{max-width:44rem}
+.pied__haut{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;font-weight:700;text-decoration:none}
+.pied__haut .ic{width:1rem;height:1rem}
+
+/* ---------- Barre d'actions (téléphone et tablette) ---------- */
+.barre-actions{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:.5rem;padding:.5rem .75rem calc(.5rem + env(safe-area-inset-bottom, 0px));background:rgb(253 250 243 / .97);border-top:1px solid rgb(31 58 43 / .12);box-shadow:0 -12px 28px -20px rgb(31 58 43 / .45)}
+@supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+  .barre-actions{background:rgb(253 250 243 / .9);-webkit-backdrop-filter:blur(12px) saturate(1.3);backdrop-filter:blur(12px) saturate(1.3)}
 }
-@media (min-width:48em){
-  .toc ol{grid-template-columns:1fr 1fr;column-gap:2.5rem}
-  .hotel-details{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem}
-  .amenities{align-content:start}
-  .infos-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:3.5rem;align-items:start}
-  .info-hours{grid-row:span 3}
-  .services{grid-template-columns:minmax(0,1fr) auto;align-items:center}
-  .services__list{grid-template-columns:repeat(3,auto);justify-content:start;gap:2.5rem}
-  .footer-grid{grid-template-columns:1.3fr 1fr 1fr;align-items:start}
-  .carte{padding:2.5rem 2.25rem 2.25rem}
+.barre-actions a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem;min-height:3.5rem;padding:.35rem .25rem;border-radius:1rem;background:var(--basilic-100);color:var(--basilic-900);font-size:1rem;font-weight:700;line-height:1.1;text-align:center;text-decoration:none;transition:background-color .2s ease}
+.barre-actions .ic{width:1.35rem;height:1.35rem}
+.barre-actions .barre-actions__appel{background:var(--basilic-800);color:var(--creme-50)}
+@media (hover:hover){
+  .barre-actions a:hover{background:var(--basilic-200);color:var(--basilic-900)}
+  .barre-actions .barre-actions__appel:hover{background:var(--basilic-900);color:var(--creme-50)}
 }
 
-/* ============ Bureau ============ */
-@media (min-width:64em){
-  .site-header__bar{flex-wrap:nowrap;min-height:4.75rem}
-  .header-call,.menu-toggle,.js .menu-toggle{display:none}
-  .site-nav,.js .site-nav{display:block;flex-basis:auto}
-  .nav-list{align-items:center;margin:0;padding:0;overflow:visible}
-  .nav-list a{position:relative;padding:0 .7rem;font-size:.9375rem}
-  .nav-list li:not(.nav-call) a::after{content:"";position:absolute;left:.7rem;right:.7rem;bottom:.55rem;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
-  .nav-list li:not(.nav-call) a:hover{background:none}
-  .nav-list li:not(.nav-call) a:hover::after,.nav-list a.is-current::after{transform:scaleX(1)}
-  .nav-list a.is-current{color:var(--basil-700)}
-  .nav-call{margin-left:.6rem}
-  .nav-call a{padding:0 1.1rem}
-  .nav-call a:hover{background:var(--basil-800);color:var(--cream-50)}
-
-  .hero__grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:4.5rem;align-items:center}
-  .hero .ph{--ratio:4/5}
-  .seal{top:auto;right:auto;bottom:4.25rem;left:-4.25rem;width:8.5rem;height:8.5rem}
-  .toc ol{grid-template-columns:repeat(4,1fr);column-gap:0}
-  .toc li + li a{border-left:1px solid var(--line);padding-left:1.25rem}
-  .toc a{grid-template-columns:minmax(0,1fr) auto;align-content:start;height:100%;padding:1.4rem 1.25rem 1.4rem 0;border-bottom:0}
-  .toc__num{grid-row:auto}
-  .toc__name,.toc__desc{grid-column:1}
-  .toc .i{grid-row:1;grid-column:2}
-
-  .hotel-grid{grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-areas:"p1 p2" "details tarifs";column-gap:3.5rem;row-gap:4rem}
-  .hotel-p1{grid-area:p1}
-  .hotel-p2{grid-area:p2}
-  .hotel-details{grid-area:details}
-  .hotel-tarifs{grid-area:tarifs;align-self:start}
-
-  .resto-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:5rem;align-items:start}
-  .resto-grid .ph{--ratio:5/4;margin-top:.5rem}
-
-  .contact-grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:5rem;align-items:start}
-  .contact-list > div{grid-template-columns:10rem minmax(0,1fr);align-items:baseline;gap:1.5rem}
-  .contact-list dd{min-width:0}
-  .footer-grid{grid-template-columns:1.3fr 1fr 1fr auto}
+/* ---------- Apparition douce ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .accueil__texte > *{animation:monte .7s cubic-bezier(.2,.7,.2,1) both}
+  .accueil__texte > :nth-child(2){animation-delay:.06s}
+  .accueil__texte > :nth-child(3){animation-delay:.12s}
+  .accueil__texte > :nth-child(4){animation-delay:.18s}
+  .accueil__texte > :nth-child(5){animation-delay:.24s}
+  .accueil__texte > :nth-child(6){animation-delay:.3s}
+  .accueil__visuel{animation:monte .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  .tampon{animation:tampon .8s .6s cubic-bezier(.3,1.4,.5,1) both}
 }
-
-/* ============ Mouvement réduit ============ */
+@keyframes monte{from{transform:translateY(12px)}to{transform:none}}
+@keyframes tampon{from{transform:rotate(-6deg) scale(.88)}to{transform:rotate(12deg) scale(1)}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
+
+/* ---------- Dès 18em (288 px en taille de texte normale) : numéros, prix et horaires insécables, flèches du trio ---------- */
+@media (min-width:18em){
+  .nowrap,.nav__tel,.prix dd,.horaires td{white-space:nowrap}
+  .trio__fleche{display:inline-block}
+}
+/* ---------- Sous 18em (texte très agrandi, fort zoom ou écran très étroit) : rien n'est insécable
+   et chaque jour des horaires passe sur deux lignes s'il le faut ---------- */
+@media not all and (min-width:18em){
+  .horaires,.horaires tbody{display:block}
+  .horaires tr{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;border-bottom:1px dashed rgb(243 239 228 / .2)}
+  .horaires tr:last-child{border-bottom:0}
+  .horaires th,.horaires td{border-bottom:0}
+  .horaires th{min-width:50%}
+  .horaires td{margin-left:auto;padding-top:0}
+  .aujourdhui__mot{display:block;width:fit-content;margin:.15rem 0 0}
+}
+/* ---------- Sous 15em : mise en page resserrée, sans défilement horizontal jusqu'à 10em de large (320 px avec un texte à 200 %) ----------
+   Pictos au-dessus du texte, cadres et marges amincis, grands titres à la mesure de l'écran, mot trop long coupé ;
+   la barre d'actions s'efface (appel, e-mail et itinéraire restent dans la page) et l'en-tête ne montre que la feuille
+   (le nom reste lu par les lecteurs d'écran). */
+@media not all and (min-width:15em){
+  html{scroll-padding-bottom:0}
+  body{overflow-wrap:anywhere}
+  .barre-actions{display:none}
+  .pied{padding-bottom:1.5rem}
+  .entete .logo__texte{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+  .js .nav__lien .feuille,.bouton .ic,.puces .ic,.photo figcaption .ic,.brin,.tampon,.ardoise__doodle{display:none}
+  .accueil__titre{font-size:min(3.6rem, 33vw - .75rem)}
+  .tete h2{font-size:min(2.35rem, 20vw - .5rem)}
+  .ardoise h3{font-size:min(2.6rem, 33vw - 1.5rem)}
+  .equipements h3,.emporter h4{font-size:min(1.45rem, 11.5vw)}
+  .trio__titre{font-size:min(1.25rem, 10.5vw)}
+  .prix dd{font-size:min(1.5rem, 10.5vw)}
+  .mini-ardoise__prix{font-size:min(1.4rem, 10.5vw)}
+  .accueil__pastille{letter-spacing:.06em}
+  .accueil__visuel{padding:0}
+  .photo{display:flex;flex-direction:column;justify-content:flex-end;min-width:0;overflow:visible}
+  .photo figcaption,.photo--arche figcaption{position:relative;inset:auto;margin:.85rem}
+  .trio__lien,.chambre,.produit{grid-template-columns:minmax(0,1fr)}
+  .trio__icone,.chambre__icone,.produit__icone{grid-row:auto}
+  .trio__texte{grid-column:auto}
+  .trio__lien,.chambre,.produit,.carte-info,.contact-carte,.emporter{padding-inline:.9rem}
+  .carte-info__tete{flex-wrap:wrap}
+  .bouton,.ardoise__pied .bouton,.emporter .bouton{padding-inline:.75rem}
+  .puces li{padding-inline:.7rem}
+  .equipements li{gap:.5rem;padding-inline:.6rem}
+  .ardoise{padding:.3rem}
+  .ardoise__tableau{padding-inline:.75rem}
+  .prix dt{flex-basis:auto}
+  .prix dt::after{min-width:0}
+}
+
+/* ---------- Petits écrans confortables ---------- */
+@media (min-width:22.5em){
+  .nav-bouton{padding-inline:.85rem 1rem}
+  .nav-bouton__libelle{position:static;width:auto;height:auto;overflow:visible;clip:auto;clip-path:none}
+}
+
+/* ---------- Tablette ---------- */
+@media (min-width:30em){
+  :root{--barre-h:3.75rem}
+  .logo__sous{display:block}
+  .accueil__actions .bouton{flex:0 0 auto}
+  .js .nav__liste{display:grid;grid-template-columns:1fr 1fr;column-gap:2rem;align-items:center}
+  .js .nav__tel{margin-top:0}
+  .barre-actions a{flex-direction:row;gap:.5rem;min-height:2.75rem}
+}
+@media (min-width:40em){
+  .hotel__photos{grid-template-columns:1fr 1fr}
+  .equipements ul{grid-template-columns:1fr 1fr}
+  .aussi__grille{grid-template-columns:1fr 1fr}
+  .emporter{grid-column:1 / -1}
+  .ardoise__tableau{padding:2rem 2rem 1.8rem}
+}
+@media (min-width:48em){
+  .trio{grid-template-columns:repeat(3, 1fr)}
+  .trio__lien{grid-template-columns:auto 1fr;align-content:start;padding:1.25rem}
+  .trio__icone{grid-row:auto;margin-bottom:.5rem}
+  .trio__titre,.trio__texte{grid-column:1 / -1}
+  .trio__fleche{grid-column:2;grid-row:1;justify-self:end}
+  .hotel__grille{grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);grid-template-areas:"chambres tarifs" "equipements equipements";gap:2.5rem 2rem;align-items:start}
+  .chambres{grid-area:chambres}
+  .ardoise--tarifs{grid-area:tarifs}
+  .equipements{grid-area:equipements}
+  .restaurant__grille{grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);align-items:center}
+  .infos__grille{grid-template-columns:1fr 1fr}
+  .ardoise--horaires{grid-row:1 / span 3}
+  .horaires th,.horaires td{padding-block:.8rem}
+  .contact__cartes{grid-template-columns:repeat(3, 1fr)}
+  .pied__grille{grid-template-columns:1.4fr 1fr 1fr}
+}
+
+/* ---------- Bureau ---------- */
+@media (min-width:60em){
+  :root{--entete-h:4.5rem}
+  html{scroll-padding-bottom:0}
+  body{font-size:1.0625rem}
+  .barre-actions{display:none}
+  .pied{padding-bottom:1.5rem}
+  .entete,.js .entete{position:sticky;top:0}
+  .entete__barre,.js .entete__barre{flex-wrap:nowrap;padding-block:0}
+  .js .nav-bouton{display:none}
+  .nav,.js .nav,.js .nav.est-ouvert{position:static;flex-basis:auto;max-height:none;overflow:visible;padding:0;background:none;border:0;box-shadow:none;visibility:visible;opacity:1;transform:none;transition:none}
+  .nav__liste,.js .nav__liste{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:.15rem;width:auto}
+  .nav__lien,.js .nav__lien{position:relative;min-height:2.75rem;padding:.5rem .8rem;border:0;border-radius:999px;font-family:var(--police-texte);font-size:.9688rem;font-weight:700}
+  .nav__lien:hover,.js .nav__lien:hover{background:none;color:var(--basilic-700)}
+  .nav__lien .feuille,.js .nav__lien .feuille{display:none}
+  .nav__lien::after{content:"";position:absolute;left:.8rem;right:.8rem;bottom:.3rem;height:.4rem;background:var(--trait) center/100% 100% no-repeat;transform:scaleX(0);transform-origin:left center;transition:transform .25s ease}
+  .nav__lien:hover::after,.nav__lien[aria-current]::after{transform:scaleX(1)}
+  .nav__tel,.js .nav__tel{width:auto;min-height:2.75rem;margin:0 0 0 .6rem}
+
+  .accueil{padding-block:3.5rem 5rem}
+  .accueil__grille{grid-template-columns:minmax(0, 1.1fr) minmax(0, .9fr);gap:3rem}
+  .accueil__visuel{max-width:none;padding:0 1.25rem 1.5rem 2.75rem}
+  .photo--arche{aspect-ratio:4/5;border-radius:50% 50% var(--rayon-l) var(--rayon-l) / 40% 40% var(--rayon-l) var(--rayon-l)}
+  .brin{left:-.7rem;bottom:-.95rem;width:6.65rem}
+  .tampon{top:1.5rem;right:-.5rem;width:7.5rem;height:7.5rem}
+  .trio{margin-top:3.5rem}
+
+  .hotel__photos{grid-template-columns:1.25fr 1fr;align-items:end}
+  .hotel__photos .photo:first-child{aspect-ratio:16/10}
+  .hotel__grille{grid-template-columns:minmax(0, 1.3fr) minmax(0, 1fr);grid-template-areas:"chambres tarifs" "equipements tarifs";gap:2.25rem 3.5rem}
+  .ardoise--tarifs{position:sticky;top:6.5rem}
+
+  .restaurant__entete{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:3rem}
+  .restaurant__entete .mini-ardoise{margin:0 0 .5rem}
+  .restaurant__grille{grid-template-columns:minmax(0, 1fr) minmax(0, 1.1fr);gap:3.5rem}
+  .restaurant__grille .photo{aspect-ratio:5/4}
+
+  .infos__grille{grid-template-columns:minmax(0, 1.05fr) minmax(0, 1fr);gap:1.5rem 2rem}
+}
+/* Trois colonnes pour « Bar, terrasse et plats à emporter » seulement quand le conteneur
+   a atteint sa largeur maximale : la carte verte n'est alors pas plus haute que les photos 4/3. */
+@media (min-width:72em){
+  .aussi__grille{grid-template-columns:1fr 1fr 1fr}
+  .emporter{grid-column:auto}
+}
+@media (min-width:75em){
+  .accueil__titre{font-size:8rem}
+}
+
+/* ---------- Écran peu haut (téléphone à l'horizontale, fort zoom) ----------
+   L'en-tête ne reste plus collé et la barre d'actions s'efface (appel, e-mail et itinéraire
+   restent dans la rubrique Contact) : le contenu garde la place. */
+@media (orientation:landscape) and (max-height:30em){
+  html{scroll-padding-bottom:0}
+  .entete,.js .entete{position:relative}
+  .barre-actions{display:none}
+  .pied{padding-bottom:1.5rem}
+  main,.section,.aussi,main a[href],footer a[href]{scroll-margin-top:.75rem}
+}
+
+/* ---------- Impression (pour le rendez-vous) ---------- */
+@media print{
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .evitement,.nav-bouton,.nav,.barre-actions{display:none!important}
+  .entete,.js .entete{position:static}
+  .pied{padding-bottom:1.5rem}
+  .photo,.ardoise,.chambre,.produit,.carte-info,.contact-carte,.emporter,.trio__lien{break-inside:avoid}
+}
 </style>
 <script>
-(function () {
-  var d = document;
-  d.documentElement.classList.add('js');
-  d.addEventListener('DOMContentLoaded', function () {
-    var btn = d.querySelector('.menu-toggle');
-    var nav = d.getElementById('menu');
-    function setMenu(open) {
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      nav.classList.toggle('is-open', open);
-    }
-    if (btn && nav) {
-      btn.addEventListener('click', function () { setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
-      nav.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
-      d.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); btn.focus(); }
-      });
-      var mq = window.matchMedia('(min-width: 64em)');
-      var onChange = function () { if (mq.matches) setMenu(false); };
-      if (mq.addEventListener) mq.addEventListener('change', onChange); else mq.addListener(onChange);
-    }
-    var row = d.querySelector('.hours tr[data-day="' + new Date().getDay() + '"]');
-    if (row) {
-      row.classList.add('is-today');
-      row.cells[0].insertAdjacentHTML('beforeend', ' <span class="today">Aujourd\'hui</span>');
-    }
-    if (nav && 'IntersectionObserver' in window) {
-      var links = nav.querySelectorAll('a[href^="#"]');
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (!en.isIntersecting) return;
-          links.forEach(function (a) { a.classList.toggle('is-current', a.getAttribute('href') === '#' + en.target.id); });
-        });
-      }, { rootMargin: '-45% 0px -50% 0px' });
-      d.querySelectorAll('main > section[id]').forEach(function (s) { io.observe(s); });
-    }
+/* Script minimal : panneau de navigation, jour courant dans les horaires, rubrique active. */
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var ligne = document.querySelector('.horaires [data-jour="' + new Date().getDay() + '"]');
+  if (ligne) {
+    ligne.classList.add('aujourdhui');
+    ligne.setAttribute('aria-current', 'date');
+    ligne.cells[0].insertAdjacentHTML('beforeend', ' <span class="aujourdhui__mot">aujourd\'hui</span>');
+  }
+  var entete = document.querySelector('.entete');
+  var bouton = document.querySelector('.nav-bouton');
+  var nav = document.getElementById('navigation');
+  if (!entete || !bouton || !nav) return;
+  function basculer(ouvrir, rendreFocus) {
+    nav.style.maxHeight = ouvrir ? Math.max(200, window.innerHeight - entete.getBoundingClientRect().bottom) + 'px' : '';
+    bouton.setAttribute('aria-expanded', ouvrir ? 'true' : 'false');
+    nav.classList.toggle('est-ouvert', ouvrir);
+    if (!ouvrir && rendreFocus) bouton.focus();
+  }
+  bouton.addEventListener('click', function () {
+    basculer(bouton.getAttribute('aria-expanded') !== 'true', false);
   });
-})();
+  nav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) basculer(false, false);
+  });
+  // Le panneau se referme quand le focus clavier part vers la page (sinon il la recouvrirait)
+  nav.addEventListener('focusout', function (e) {
+    var vers = e.relatedTarget;
+    if (vers && vers !== bouton && !nav.contains(vers) && nav.classList.contains('est-ouvert')) basculer(false, false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('est-ouvert')) basculer(false, true);
+  });
+  var bureau = window.matchMedia('(min-width: 60em)');
+  var auChangement = function () { basculer(false, false); };
+  if (bureau.addEventListener) bureau.addEventListener('change', auChangement); else bureau.addListener(auChangement);
+  if (!('IntersectionObserver' in window)) return;
+  var liens = nav.querySelectorAll('.nav__lien');
+  var observateur = new IntersectionObserver(function (entrees) {
+    entrees.forEach(function (entree) {
+      if (!entree.isIntersecting) return;
+      liens.forEach(function (lien) {
+        if (lien.hash === '#' + entree.target.id) lien.setAttribute('aria-current', 'location');
+        else lien.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  liens.forEach(function (lien) {
+    var cible = document.getElementById(lien.hash.slice(1));
+    if (cible) observateur.observe(cible);
+  });
+});
 </script>
 </head>
 <body>
-
-<aside class="maquette" aria-label="À propos de cette maquette">
-  <p><span class="maquette__dot" aria-hidden="true"></span>Maquette proposée par Nathan – ce n'est pas le site officiel du Basilic</p>
+<aside class="bandeau" id="haut" aria-label="À propos de cette page">
+  <p><svg class="ic" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.8v.01"/></svg><span>Maquette proposée par Nathan – ce n'est pas le site officiel du Basilic</span></p>
 </aside>
+<a class="evitement" href="#contenu">Aller au contenu</a>
 
-<a class="skip" href="#contenu">Aller au contenu</a>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <symbol id="feuille" viewBox="0 0 64 64">
+    <path d="M10.5 54.5c-3-14.5 2.5-29.5 13-38.3 8.7-7.2 19.8-9.6 31.6-9.1 1.4 12.2-1.8 25-9.8 34.4C36.7 51.3 24.2 56.6 10.5 54.5z" stroke="none" style="fill:var(--feuille-fond, currentColor);fill-opacity:var(--feuille-opacite, .2)"/>
+    <path d="M10.5 54.5c-3-14.5 2.5-29.5 13-38.3 8.7-7.2 19.8-9.6 31.6-9.1 1.4 12.2-1.8 25-9.8 34.4C36.7 51.3 24.2 56.6 11.8 55.2" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M5.5 59.5l6-6C21 44 33 30 46 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M21 42.5c-2.2-4.5-2.2-9.5-.5-14M29 34c-1.8-4.4-1.6-9 .4-13.2M37.5 25.5c-1-3.4-.8-6.6.6-9.7M21.5 43c4.4 1.5 9 1.5 13.5-.3M29.5 34.5c4.2 1.2 8.4 1 12.6-.8M38 25.8c3 .8 6 .6 9-.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-opacity=".75"/>
+  </symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.6 4.3-2.1 1.4a11.5 11.5 0 0 0 6.1 6.1l1.4-2.1 4.3 1.6v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 7 8.2 6 8.2-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-horloge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-maison" viewBox="0 0 24 24"><path d="M3 20.5h18M5 20.5V10l7-5.5 7 5.5v10.5"/><path d="M10 20.5V15h4v5.5"/><path d="M7.5 12H10v2.2H7.5zM14 12h2.5v2.2H14z"/></symbol>
+  <symbol id="i-parasol" viewBox="0 0 24 24"><path d="M12 4a8.5 8.5 0 0 1 8.5 7.5h-17A8.5 8.5 0 0 1 12 4z"/><path d="M12 3v1M12 11.5v9M8.5 20.5h7"/><path d="M8 11.5c.6-3.4 2-6 4-7.5 2 1.5 3.4 4.1 4 7.5"/></symbol>
+  <symbol id="i-lit2" viewBox="0 0 24 24"><path d="M3 20.5v-10A2.5 2.5 0 0 1 5.5 8h13a2.5 2.5 0 0 1 2.5 2.5v10M3 16.5h18"/><rect x="5.5" y="10.5" width="5.5" height="3" rx="1.2"/><rect x="13" y="10.5" width="5.5" height="3" rx="1.2"/></symbol>
+  <symbol id="i-lit1" viewBox="0 0 24 24"><path d="M6 20.5v-10A2.5 2.5 0 0 1 8.5 8h7a2.5 2.5 0 0 1 2.5 2.5v10M6 16.5h12"/><rect x="9" y="10.5" width="6" height="3" rx="1.2"/></symbol>
+  <symbol id="i-famille" viewBox="0 0 24 24"><circle cx="8.5" cy="7.5" r="3"/><path d="M3 20a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.3"/><path d="M14.6 14.6A4.3 4.3 0 0 1 21 18.5"/></symbol>
+  <symbol id="i-douche" viewBox="0 0 24 24"><path d="M5 21V7a3 3 0 0 1 3-3h1.5a3 3 0 0 1 3 3v1.5M9 8.5h7M10 12l-.6 1.6M12.5 12v1.7M15 12l.6 1.6M10.5 16.5l-.6 1.6M14.5 16.5l.6 1.6"/></symbol>
+  <symbol id="i-porte" viewBox="0 0 24 24"><path d="M6 21V4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21M3.5 21h17M14.5 12.5v.01"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.6 16a5 5 0 0 1 6.8 0M12 19.5v.01"/></symbol>
+  <symbol id="i-bureau" viewBox="0 0 24 24"><path d="M3 10.5h18M5 10.5V20M19 10.5V20M13 10.5V17h6M13 13.7h6M8 10.5V6h6.5v4.5"/></symbol>
+  <symbol id="i-nonfumeur" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8M6.5 13.5h7M15.5 13.5h2"/></symbol>
+  <symbol id="i-verre" viewBox="0 0 24 24"><path d="M7.5 3h9l-.6 5.5a3.9 3.9 0 0 1-7.8 0zM12 12.4V20M8.5 20.5h7"/></symbol>
+  <symbol id="i-sac" viewBox="0 0 24 24"><path d="M5 8h14l-1 12a1.2 1.2 0 0 1-1.2 1H7.2A1.2 1.2 0 0 1 6 20zM9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+  <symbol id="i-assiette" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/></symbol>
+  <symbol id="i-fromage" viewBox="0 0 24 24"><path d="M3 11.5 14 5l7 5v8.5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM3 11.5h18"/><circle cx="8" cy="15.5" r="1.3"/><circle cx="14.5" cy="14.8" r="1"/><circle cx="17.5" cy="17.2" r=".8"/></symbol>
+  <symbol id="i-couverts" viewBox="0 0 24 24"><path d="M7 3v6.5a2 2 0 0 0 2 2V21M11 3v6.5a2 2 0 0 1-2 2M9 3v5M17 21V3c-2 1.5-3 4-3 7.5V13h3"/></symbol>
+  <symbol id="i-carte" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3.5"/></symbol>
+  <symbol id="i-billet" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></symbol>
+  <symbol id="i-bulle" viewBox="0 0 24 24"><path d="M4 4.5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-8.5L7 20v-3.5H4a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1z"/><path d="M7.5 9h9M7.5 12.5h6"/></symbol>
+  <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+  <symbol id="i-soleil" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+  <symbol id="i-photo" viewBox="0 0 24 24"><path d="M4 7.5h3L8.6 5h6.8L17 7.5h3a1 1 0 0 1 1 1V18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8.5a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-haut" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-bas" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-traits" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h11"/></symbol>
+  <symbol id="i-croix" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+</svg>
 
-<header class="site-header">
-  <div class="container site-header__bar">
-    <a class="brand" href="#accueil">
-      <svg class="i brand__mark" aria-hidden="true" focusable="false"><use href="#i-sprig"/></svg>
-      <span>
-        <span class="brand__name">Le Basilic</span>
-        <span class="brand__sub">Saligny · Yonne</span>
-      </span>
+<header class="entete">
+  <div class="conteneur entete__barre">
+    <a class="logo" href="#haut">
+      <span class="logo__pastille" aria-hidden="true"><svg class="feuille" viewBox="0 0 64 64" focusable="false"><use href="#feuille"/></svg></span>
+      <span class="logo__texte"><span class="logo__nom">Le Basilic</span><span class="logo__sous">Bar · Hôtel · Restaurant</span></span>
     </a>
-    <a class="header-call" href="tel:+33386978341">
-      <svg class="i" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>
-      <span class="visually-hidden">Appeler le 03 86 97 83 41</span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
-      <span class="menu-toggle__icon" aria-hidden="true"></span>Menu
+    <button class="nav-bouton" type="button" aria-expanded="false" aria-controls="navigation">
+      <svg class="ic ic-traits" aria-hidden="true" focusable="false"><use href="#i-traits"/></svg>
+      <svg class="ic ic-croix" aria-hidden="true" focusable="false"><use href="#i-croix"/></svg>
+      <span class="nav-bouton__libelle">Rubriques</span>
     </button>
-    <nav id="menu" class="site-nav" aria-label="Navigation principale">
-      <ul class="nav-list">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#hotel">Hôtel</a></li>
-        <li><a href="#restaurant">Restaurant</a></li>
-        <li><a href="#infos">Infos pratiques</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="nav-call"><a href="tel:+33386978341"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span class="visually-hidden">Appeler le </span>03 86 97 83 41</a></li>
+    <nav class="nav" id="navigation" aria-label="Navigation principale">
+      <ul class="nav__liste" role="list">
+        <li><a class="nav__lien" href="#accueil"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Accueil</a></li>
+        <li><a class="nav__lien" href="#hotel"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Hôtel</a></li>
+        <li><a class="nav__lien" href="#restaurant"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Restaurant</a></li>
+        <li><a class="nav__lien" href="#infos"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Infos pratiques</a></li>
+        <li><a class="nav__lien" href="#contact"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Contact</a></li>
+        <li><a class="nav__tel" href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span class="sr-only">Appeler le </span><span class="nowrap">03 86 97 83 41</span></a></li>
       </ul>
     </nav>
   </div>
@@ -425,218 +691,265 @@ main,section[id]{scroll-margin-top:var(--scroll-offset)}
 <main id="contenu" tabindex="-1">
 
   <!-- ============ ACCUEIL ============ -->
-  <section id="accueil" class="hero" aria-labelledby="titre-accueil">
-    <div class="container">
-      <p class="masthead"><span>Saligny · Yonne</span><span>57 Grande Rue</span><span>À 5 km de Sens</span></p>
-
-      <div class="hero__grid">
-        <div class="hero__text">
-          <p class="hero__kicker">Bar · Hôtel · Restaurant</p>
-          <h1 id="titre-accueil" class="hero__title"><span class="hero__le">Le</span> Basilic</h1>
-          <p class="hero__lede">Une adresse de village, simple et chaleureuse, à Saligny, à 5 km de Sens. On y vient boire un verre au bar, partager un repas de cuisine maison ou passer la nuit dans l'une des quatre chambres à l'étage.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="tel:+33386978341"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span>Appeler · <span class="nowrap">03 86 97 83 41</span></span></a>
-            <a class="btn btn--ghost" href="#hotel">Découvrir les chambres</a>
+  <section id="accueil" class="section accueil" aria-labelledby="titre-accueil">
+    <div class="conteneur">
+      <div class="accueil__grille">
+        <div class="accueil__texte">
+          <p class="accueil__pastille">Bar · Hôtel · Restaurant</p>
+          <h1 id="titre-accueil" class="accueil__titre"><span class="accueil__le">Le</span> Basilic</h1>
+          <p class="accueil__lieu"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>Saligny (Yonne) · à <span class="nowrap">5 km</span> de Sens</span></p>
+          <p class="accueil__intro">Une adresse de village, simple et chaleureuse. Poussez la porte du Basilic pour une cuisine maison à base de produits frais, une nuit dans l'une des quatre chambres exposées plein sud, ou un verre au bar et en terrasse.</p>
+          <div class="accueil__actions">
+            <a class="bouton bouton--plein" href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Appeler le <span class="nowrap">03 86 97 83 41</span></span></a>
+            <a class="bouton bouton--contour" href="#hotel">Chambres et tarifs</a>
+          </div>
+          <div class="accueil__fiche">
+            <p class="accueil__adresse">
+              <span class="accueil__ou"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>57 Grande Rue, 89100 Saligny</span>
+              <a class="accueil__itineraire" href="https://www.google.com/maps/search/?api=1&query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a>
+            </p>
+            <p class="accueil__horaires"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg><span>Du lundi au vendredi, <span class="nowrap">7h – 21h</span> · fermé samedi et dimanche <span class="accueil__confirmer">(horaires à confirmer)</span></span></p>
           </div>
         </div>
 
-        <div class="hero__media">
-          <figure class="ph">
-            <div class="ph__frame" aria-hidden="true">
-              <svg class="i ph__picto" focusable="false"><use href="#i-house"/></svg>
-            </div>
-            <figcaption><span class="ph__tag">Photo à fournir</span> · La façade sur la Grande Rue</figcaption>
+        <div class="accueil__visuel">
+          <figure class="photo photo--arche">
+            <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-maison"/></svg></div>
+            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La façade sur la Grande Rue</span></figcaption>
           </figure>
-          <svg class="seal" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-            <defs><path id="seal-path" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs>
-            <circle class="seal__bg" cx="50" cy="50" r="48.5"/>
-            <circle class="seal__inner" cx="50" cy="50" r="28"/>
-            <g class="seal__ring"><text><textPath href="#seal-path" textLength="230" lengthAdjust="spacing">BAR · HÔTEL · RESTAURANT · SALIGNY ·</textPath></text></g>
-            <use class="seal__leaf" href="#i-leaf" x="39" y="39" width="22" height="22"/>
+          <svg class="brin" viewBox="1 12 112 237" aria-hidden="true" focusable="false">
+            <g transform="rotate(-16 84 246)">
+            <path d="M84 246C80 204 88 166 84 126S92 70 100 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+            <use href="#feuille" width="64" height="64" transform="translate(83 206) rotate(-96) scale(1) translate(-6 -59)"/>
+            <use href="#feuille" width="64" height="64" transform="translate(84 194) rotate(6) scale(.95) translate(-6 -59)"/>
+            <use href="#feuille" width="64" height="64" transform="translate(85 146) rotate(-92) scale(.82) translate(-6 -59)"/>
+            <use href="#feuille" width="64" height="64" transform="translate(85 134) rotate(0) scale(.78) translate(-6 -59)"/>
+            <use href="#feuille" width="64" height="64" transform="translate(90 90) rotate(-88) scale(.6) translate(-6 -59)"/>
+            <use href="#feuille" width="64" height="64" transform="translate(91 82) rotate(-6) scale(.56) translate(-6 -59)"/>
+            <use href="#feuille" width="64" height="64" transform="translate(100 42) rotate(-45) scale(.44) translate(-6 -59)"/>
+            </g>
+          </svg>
+          <svg class="tampon" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+            <defs><path id="cercle-tampon" d="M19 60a41 41 0 1 1 82 0a41 41 0 1 1-82 0"/></defs>
+            <circle class="tampon__fond" cx="60" cy="60" r="58"/>
+            <circle class="tampon__filet" cx="60" cy="60" r="53.5"/>
+            <text class="tampon__texte"><textPath href="#cercle-tampon" textLength="250" lengthAdjust="spacing">CUISINE MAISON · PRODUITS FRAIS ·</textPath></text>
+            <use href="#feuille" x="41" y="41" width="38" height="38"/>
           </svg>
         </div>
       </div>
 
-      <nav class="toc" aria-label="Sommaire">
-        <p class="toc__title">Au sommaire</p>
-        <ol>
-          <li><a href="#hotel"><span class="toc__num">01</span><span class="toc__name">L'hôtel</span><span class="toc__desc">4 chambres à l'étage, exposées plein sud</span><svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#restaurant"><span class="toc__num">02</span><span class="toc__name">Le restaurant</span><span class="toc__desc">Cuisine maison, produits frais</span><svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#infos"><span class="toc__num">03</span><span class="toc__name">Infos pratiques</span><span class="toc__desc">Horaires, langues parlées, paiement</span><svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
-          <li><a href="#contact"><span class="toc__num">04</span><span class="toc__name">Contact</span><span class="toc__desc">Téléphone, e-mail, itinéraire</span><svg class="i" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li>
-        </ol>
-      </nav>
+      <ul class="trio" role="list">
+        <li>
+          <a class="trio__lien" href="#restaurant">
+            <span class="trio__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg></span>
+            <span class="trio__titre">Le restaurant</span>
+            <span class="trio__texte">Cuisine maison à base de produits frais, buffet d'hors-d'œuvre du terroir sénonais.</span>
+            <svg class="ic trio__fleche" aria-hidden="true" focusable="false"><use href="#i-bas"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="trio__lien" href="#hotel">
+            <span class="trio__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-lit2"/></svg></span>
+            <span class="trio__titre">L'hôtel</span>
+            <span class="trio__texte">4 chambres à l'étage, exposées plein sud, Wi-Fi gratuit.</span>
+            <svg class="ic trio__fleche" aria-hidden="true" focusable="false"><use href="#i-bas"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="trio__lien" href="#bar">
+            <span class="trio__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-verre"/></svg></span>
+            <span class="trio__titre">Le bar</span>
+            <span class="trio__texte">Le bar, la terrasse et des plats à emporter.</span>
+            <svg class="ic trio__fleche" aria-hidden="true" focusable="false"><use href="#i-bas"/></svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ============ HÔTEL ============ -->
-  <section id="hotel" class="section section--tint" aria-labelledby="titre-hotel">
-    <div class="container">
-      <div class="sec-head">
-        <p class="eyebrow"><span class="eyebrow__num">01</span>Dormir</p>
-        <h2 id="titre-hotel" class="sec-title">L'hôtel</h2>
-        <p class="chapo">Quatre chambres à l'étage, toutes exposées plein sud.</p>
-        <p class="lead">Seul, à deux ou en famille jusqu'à quatre personnes : le Basilic vous accueille pour la nuit à Saligny, à 5 km de Sens.</p>
+  <section id="hotel" class="section hotel" aria-labelledby="titre-hotel">
+    <div class="conteneur">
+      <div class="tete">
+        <p class="surtitre"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Dormir au Basilic</p>
+        <h2 id="titre-hotel">L'hôtel</h2>
+        <p class="chapo">Quatre chambres à l'étage, toutes exposées plein sud. Seul, à deux ou en famille, choisissez celle qui vous convient.</p>
       </div>
 
-      <div class="hotel-grid">
-        <figure class="ph ph--sun hotel-p1">
-          <div class="ph__frame" aria-hidden="true">
-            <svg class="i ph__picto" focusable="false"><use href="#i-bed"/></svg>
-          </div>
-          <figcaption><span class="ph__tag">Photo à fournir</span> · Une chambre exposée plein sud</figcaption>
+      <div class="hotel__photos">
+        <figure class="photo">
+          <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-lit2"/></svg></div>
+          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Une chambre exposée plein sud</span></figcaption>
         </figure>
+        <figure class="photo">
+          <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-famille"/></svg></div>
+          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La chambre familiale</span></figcaption>
+        </figure>
+      </div>
 
-        <div class="hotel-details">
-          <div>
-            <h3 class="label">Les chambres</h3>
-            <ul class="rooms">
-              <li class="room"><span class="room__qty">2</span><span class="room__name">chambres lit double</span></li>
-              <li class="room"><span class="room__qty">1</span><span class="room__name">chambre lit simple</span></li>
-              <li class="room"><span class="room__qty">1</span><span><span class="room__name">chambre familiale</span><span class="room__detail">Jusqu'à 4 personnes · 1 lit double + 2 lits simples</span></span></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="label">Confort</h3>
-            <ul class="amenities">
-              <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-shower"/></svg></span>Douche et lavabo dans chaque chambre</li>
-              <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-door"/></svg></span>WC partagés dans le couloir</li>
-              <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-wifi"/></svg></span>Wi-Fi gratuit</li>
-              <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-desk"/></svg></span>2 chambres avec espace bureau</li>
-              <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-nosmoke"/></svg></span>Hôtel non-fumeur</li>
-              <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-sun"/></svg></span>Chambres exposées plein sud</li>
-            </ul>
+      <div class="hotel__grille">
+        <ul class="chambres" role="list">
+          <li class="chambre">
+            <span class="chambre__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-lit2"/></svg></span>
+            <h3>Chambre lit double</h3>
+            <p class="chambre__nombre">2 chambres</p>
+            <p class="chambre__detail">1 lit double.</p>
+          </li>
+          <li class="chambre">
+            <span class="chambre__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-lit1"/></svg></span>
+            <h3>Chambre lit simple</h3>
+            <p class="chambre__nombre">1 chambre</p>
+            <p class="chambre__detail">1 lit simple.</p>
+          </li>
+          <li class="chambre chambre--famille">
+            <span class="chambre__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-famille"/></svg></span>
+            <h3>Chambre familiale</h3>
+            <p class="chambre__nombre">1 chambre</p>
+            <p class="chambre__detail">Jusqu'à 4 personnes&nbsp;: 1 lit double + 2 lits simples.</p>
+          </li>
+        </ul>
+
+        <div class="ardoise ardoise--tarifs">
+          <div class="ardoise__tableau">
+            <svg class="ardoise__doodle" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>
+            <h3>Tarifs</h3>
+            <p class="ardoise__groupe">Nuitée</p>
+            <dl class="prix">
+              <div><dt>1 personne</dt><dd>55&nbsp;€</dd></div>
+              <div><dt>2 personnes</dt><dd>65&nbsp;€</dd></div>
+              <div><dt>3 personnes</dt><dd>75&nbsp;€</dd></div>
+            </dl>
+            <hr class="ardoise__trait">
+            <dl class="prix">
+              <div><dt>Repas</dt><dd>30&nbsp;€/pers.</dd></div>
+            </dl>
+            <div class="ardoise__pied">
+              <p>Pour vous renseigner&nbsp;:</p>
+              <a class="bouton bouton--creme" href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Appeler le <span class="nowrap">03 86 97 83 41</span></span></a>
+              <a class="ardoise__mail" href="mailto:hotel-restaurant-lebasilic@orange.fr?subject=Demande%20de%20renseignements%20%E2%80%93%20H%C3%B4tel"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>ou écrire un e-mail</a>
+            </div>
           </div>
         </div>
 
-        <figure class="ph ph--portrait hotel-p2">
-          <div class="ph__frame" aria-hidden="true">
-            <svg class="i ph__picto" focusable="false"><use href="#i-bed"/></svg>
-          </div>
-          <figcaption><span class="ph__tag">Photo à fournir</span> · La chambre familiale</figcaption>
-        </figure>
-
-        <div class="carte hotel-tarifs">
-          <div class="carte__head">
-            <p class="carte__orn" aria-hidden="true"><svg class="i" focusable="false"><use href="#i-leaf"/></svg></p>
-            <h3 class="carte__title">Tarifs</h3>
-          </div>
-          <p class="carte__group">La nuitée</p>
-          <dl class="carte__list">
-            <div class="carte__row"><dt>1 personne</dt><dd>55 €</dd></div>
-            <div class="carte__row"><dt>2 personnes</dt><dd>65 €</dd></div>
-            <div class="carte__row"><dt>3 personnes</dt><dd>75 €</dd></div>
-          </dl>
-          <div class="carte__sep" aria-hidden="true"></div>
-          <p class="carte__group">À table</p>
-          <dl class="carte__list">
-            <div class="carte__row"><dt>Repas</dt><dd>30 €/pers.</dd></div>
-          </dl>
-          <div class="carte__foot">
-            <p>Pour réserver une chambre</p>
-            <a class="btn btn--primary btn--block" href="tel:+33386978341"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg><span class="nowrap">03 86 97 83 41</span></a>
-            <a class="text-link" href="mailto:hotel-restaurant-lebasilic@orange.fr?subject=Demande%20de%20r%C3%A9servation%20%E2%80%93%20H%C3%B4tel">ou écrire un e-mail</a>
-          </div>
+        <div class="equipements">
+          <h3>Équipements</h3>
+          <ul role="list">
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-douche"/></svg>Douche et lavabo dans chaque chambre</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-porte"/></svg>WC partagés dans le couloir</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-wifi"/></svg>Wi-Fi gratuit</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-bureau"/></svg>2 chambres avec espace bureau</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-nonfumeur"/></svg>Non-fumeur</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-soleil"/></svg>Chambres à l'étage, exposées plein sud</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ RESTAURANT ============ -->
-  <section id="restaurant" class="section" aria-labelledby="titre-restaurant">
-    <div class="container">
-      <div class="sec-head">
-        <p class="eyebrow"><span class="eyebrow__num">02</span>À table</p>
-        <h2 id="titre-restaurant" class="sec-title">Le restaurant</h2>
-        <p class="chapo">Une cuisine maison, à base de produits frais.</p>
-      </div>
-
-      <div class="resto-grid">
-        <div>
-          <p class="dropcap">Au Basilic, la cuisine est faite maison, à base de produits frais. Une table de village, simple et chaleureuse, dont voici les repères.</p>
-          <ul class="sources">
-            <li class="source"><span class="source__num" aria-hidden="true">I.</span><h3>Terroir sénonais</h3><p>Un buffet d'hors-d'œuvre du terroir sénonais.</p></li>
-            <li class="source"><span class="source__num" aria-hidden="true">II.</span><h3>Fromagerie Lincet</h3><p>Les fromages viennent de la fromagerie Lincet.</p></li>
-            <li class="source"><span class="source__num" aria-hidden="true">III.</span><h3>Maison Denaux</h3><p>La viande vient de la Maison Denaux.</p></li>
-          </ul>
+  <section id="restaurant" class="section restaurant" aria-labelledby="titre-restaurant">
+    <div class="conteneur">
+      <div class="restaurant__entete">
+        <div class="tete">
+          <p class="surtitre"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>À table</p>
+          <h2 id="titre-restaurant">Le restaurant</h2>
+          <p class="chapo">Au Basilic, la cuisine est faite maison, à base de produits frais.</p>
         </div>
-        <figure class="ph ph--warm ph--portrait">
-          <div class="ph__frame" aria-hidden="true">
-            <svg class="i ph__picto" focusable="false"><use href="#i-plate"/></svg>
-          </div>
-          <figcaption><span class="ph__tag">Photo à fournir</span> · Le buffet d'hors-d'œuvre</figcaption>
+        <p class="mini-ardoise"><span class="mini-ardoise__nom">Repas</span><span class="sr-only"> : </span><span class="mini-ardoise__prix">30&nbsp;€/pers.</span></p>
+      </div>
+
+      <div class="restaurant__grille">
+        <ul class="produits" role="list">
+          <li class="produit">
+            <span class="produit__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-assiette"/></svg></span>
+            <h3>Le buffet d'hors-d'œuvre</h3>
+            <p>Du <strong>terroir sénonais</strong>.</p>
+          </li>
+          <li class="produit">
+            <span class="produit__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fromage"/></svg></span>
+            <h3>Les fromages</h3>
+            <p>De la <strong>fromagerie Lincet</strong>.</p>
+          </li>
+          <li class="produit">
+            <span class="produit__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg></span>
+            <h3>La viande</h3>
+            <p>De la <strong>Maison Denaux</strong>.</p>
+          </li>
+        </ul>
+        <figure class="photo">
+          <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-assiette"/></svg></div>
+          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Le buffet d'hors-d'œuvre</span></figcaption>
         </figure>
       </div>
 
-      <div class="resto-photos">
-        <figure class="ph">
-          <div class="ph__frame" aria-hidden="true">
-            <svg class="i ph__picto" focusable="false"><use href="#i-parasol"/></svg>
+      <div class="aussi" id="bar">
+        <h3 class="aussi__titre">Bar, terrasse et plats à emporter</h3>
+        <div class="aussi__grille">
+          <figure class="photo">
+            <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-parasol"/></svg></div>
+            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La terrasse</span></figcaption>
+          </figure>
+          <figure class="photo">
+            <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-verre"/></svg></div>
+            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Le bar</span></figcaption>
+          </figure>
+          <div class="emporter">
+            <span class="emporter__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-sac"/></svg></span>
+            <h4>Plats à emporter</h4>
+            <p>Le Basilic propose aussi des plats à emporter.</p>
+            <a class="bouton bouton--creme" href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Appeler le <span class="nowrap">03 86 97 83 41</span></span></a>
           </div>
-          <figcaption><span class="ph__tag">Photo à fournir</span> · La terrasse</figcaption>
-        </figure>
-        <figure class="ph ph--warm">
-          <div class="ph__frame" aria-hidden="true">
-            <svg class="i ph__picto" focusable="false"><use href="#i-glass"/></svg>
-          </div>
-          <figcaption><span class="ph__tag">Photo à fournir</span> · Le bar</figcaption>
-        </figure>
-      </div>
-
-      <div class="services">
-        <div>
-          <h3 class="label">Aussi au Basilic</h3>
-          <ul class="services__list">
-            <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-glass"/></svg></span>Le bar</li>
-            <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-parasol"/></svg></span>La terrasse</li>
-            <li><span class="amenity__ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-bag"/></svg></span>Plats à emporter</li>
-          </ul>
         </div>
-        <p class="price-tag"><span class="price-tag__label">Repas</span> <span class="price-tag__value">30 €</span><span class="price-tag__unit">/pers.</span></p>
       </div>
     </div>
   </section>
 
   <!-- ============ INFOS PRATIQUES ============ -->
-  <section id="infos" class="section section--tint" aria-labelledby="titre-infos">
-    <div class="container">
-      <div class="sec-head">
-        <p class="eyebrow"><span class="eyebrow__num">03</span>S'organiser</p>
-        <h2 id="titre-infos" class="sec-title">Infos pratiques</h2>
-        <p class="chapo">L'essentiel pour préparer votre venue.</p>
+  <section id="infos" class="section infos" aria-labelledby="titre-infos">
+    <div class="conteneur">
+      <div class="tete">
+        <p class="surtitre"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Bon à savoir</p>
+        <h2 id="titre-infos">Infos pratiques</h2>
       </div>
 
-      <div class="infos-grid">
-        <div class="carte info-hours">
-          <div class="carte__head">
-            <p class="carte__orn" aria-hidden="true"><svg class="i" focusable="false"><use href="#i-clock"/></svg></p>
-            <h3 class="carte__title">Horaires</h3>
-            <p class="tag-note"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-info"/></svg>Horaires à confirmer</p>
+      <div class="infos__grille">
+        <div class="ardoise ardoise--horaires">
+          <div class="ardoise__tableau">
+            <svg class="ardoise__doodle" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>
+            <h3 id="titre-horaires">Horaires</h3>
+            <p class="ardoise__alerte">(horaires à confirmer)</p>
+            <table class="horaires">
+              <caption class="sr-only">Horaires (horaires à confirmer)</caption>
+              <tbody>
+                <tr data-jour="1"><th scope="row">Lundi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
+                <tr data-jour="2"><th scope="row">Mardi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
+                <tr data-jour="3"><th scope="row">Mercredi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
+                <tr data-jour="4"><th scope="row">Jeudi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
+                <tr data-jour="5"><th scope="row">Vendredi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
+                <tr data-jour="6" class="ferme"><th scope="row">Samedi</th><td>Fermé</td></tr>
+                <tr data-jour="0" class="ferme"><th scope="row">Dimanche</th><td>Fermé</td></tr>
+              </tbody>
+            </table>
           </div>
-          <table class="hours">
-            <caption class="visually-hidden">Horaires d'ouverture de la semaine (horaires à confirmer)</caption>
-            <tbody>
-              <tr data-day="1"><th scope="row">Lundi</th><td>7h – 21h</td></tr>
-              <tr data-day="2"><th scope="row">Mardi</th><td>7h – 21h</td></tr>
-              <tr data-day="3"><th scope="row">Mercredi</th><td>7h – 21h</td></tr>
-              <tr data-day="4"><th scope="row">Jeudi</th><td>7h – 21h</td></tr>
-              <tr data-day="5"><th scope="row">Vendredi</th><td>7h – 21h</td></tr>
-              <tr data-day="6" class="closed"><th scope="row">Samedi</th><td>Fermé</td></tr>
-              <tr data-day="0" class="closed"><th scope="row">Dimanche</th><td>Fermé</td></tr>
-            </tbody>
-          </table>
         </div>
 
-        <div class="info-block">
-          <h3><svg class="i" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Adresse</h3>
-          <p class="info-addr">57 Grande Rue<br>89100 Saligny</p>
-          <p class="info-muted">Yonne · à 5 km de Sens</p>
-          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener">Itinéraire<svg class="i" aria-hidden="true" focusable="false"><use href="#i-external"/></svg><span class="visually-hidden"> (s'ouvre dans un nouvel onglet)</span></a>
+        <div class="carte-info">
+          <div class="carte-info__tete">
+            <span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
+            <h3>Adresse</h3>
+          </div>
+          <address>57 Grande Rue<br>89100 Saligny</address>
+          <p class="carte-info__note">Dans l'Yonne, à <span class="nowrap">5 km</span> de Sens.</p>
+          <a class="bouton bouton--contour" href="https://www.google.com/maps/search/?api=1&query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a>
         </div>
 
-        <div class="info-block">
-          <h3><svg class="i" aria-hidden="true" focusable="false"><use href="#i-speech"/></svg>Langues parlées</h3>
-          <ul class="chips">
+        <div class="carte-info">
+          <div class="carte-info__tete">
+            <span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-bulle"/></svg></span>
+            <h3>Langues parlées</h3>
+          </div>
+          <ul class="puces" role="list">
             <li>Français</li>
             <li>Anglais</li>
             <li>Espagnol</li>
@@ -644,11 +957,14 @@ main,section[id]{scroll-margin-top:var(--scroll-offset)}
           </ul>
         </div>
 
-        <div class="info-block">
-          <h3><svg class="i" aria-hidden="true" focusable="false"><use href="#i-card"/></svg>Paiement</h3>
-          <ul class="chips">
-            <li>Carte bancaire</li>
-            <li>Espèces</li>
+        <div class="carte-info">
+          <div class="carte-info__tete">
+            <span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-carte"/></svg></span>
+            <h3>Paiement</h3>
+          </div>
+          <ul class="puces" role="list">
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-carte"/></svg>Carte bancaire</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-billet"/></svg>Espèces</li>
           </ul>
         </div>
       </div>
@@ -656,81 +972,79 @@ main,section[id]{scroll-margin-top:var(--scroll-offset)}
   </section>
 
   <!-- ============ CONTACT ============ -->
-  <section id="contact" class="section section--dark" aria-labelledby="titre-contact">
-    <svg class="i contact-sprig" aria-hidden="true" focusable="false"><use href="#i-sprig"/></svg>
-    <div class="container contact-grid">
-      <div class="sec-head">
-        <p class="eyebrow"><span class="eyebrow__num">04</span>Nous joindre</p>
-        <h2 id="titre-contact" class="sec-title">Contact</h2>
-        <p class="chapo">Poussez la porte du Basilic.</p>
-        <p class="lead">Pour réserver une chambre ou pour toute question, appelez-nous ou écrivez-nous. Ici, on parle français, anglais, espagnol et portugais.</p>
+  <section id="contact" class="section contact" aria-labelledby="titre-contact">
+    <div class="conteneur">
+      <div class="tete">
+        <p class="surtitre"><svg class="feuille" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#feuille"/></svg>Une question&nbsp;?</p>
+        <h2 id="titre-contact">Contact</h2>
+        <p class="chapo">Pour une chambre, un repas, des plats à emporter ou un simple renseignement, appelez ou écrivez au Basilic.</p>
       </div>
 
-      <dl class="contact-list">
-        <div>
-          <dt><svg class="i" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>Téléphone</dt>
-          <dd><a class="contact-tel" href="tel:+33386978341">03 86 97 83 41</a></dd>
-        </div>
-        <div>
-          <dt><svg class="i" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>E-mail</dt>
-          <dd><a class="contact-mail" href="mailto:hotel-restaurant-lebasilic@orange.fr?subject=Demande%20de%20renseignements">hotel-restaurant-lebasilic<wbr>@orange.fr</a></dd>
-        </div>
-        <div>
-          <dt><svg class="i" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>Adresse</dt>
-          <dd>
-            <address class="contact-addr">57 Grande Rue<br>89100 Saligny</address>
-            <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener">Itinéraire<svg class="i" aria-hidden="true" focusable="false"><use href="#i-external"/></svg><span class="visually-hidden"> (s'ouvre dans un nouvel onglet)</span></a>
-          </dd>
-        </div>
-      </dl>
+      <ul class="contact__cartes" role="list">
+        <li>
+          <a class="contact-carte" href="tel:+33386978341">
+            <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg></span>
+            <span class="contact-carte__type">Téléphone</span>
+            <span class="contact-carte__valeur nowrap">03 86 97 83 41</span>
+            <span class="contact-carte__action">Appeler<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <a class="contact-carte" href="mailto:hotel-restaurant-lebasilic@orange.fr?subject=Demande%20de%20renseignements%20-%20Le%20Basilic">
+            <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
+            <span class="contact-carte__type">E-mail</span>
+            <span class="contact-carte__valeur contact-carte__valeur--mail">hotel-restaurant-lebasilic@orange.fr</span>
+            <span class="contact-carte__action">Écrire un e-mail<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg></span>
+          </a>
+        </li>
+        <li>
+          <div class="contact-carte">
+            <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
+            <span class="contact-carte__type">Adresse</span>
+            <address class="contact-carte__valeur">57 Grande Rue,<br>89100 Saligny</address>
+            <span class="contact-carte__espace"></span>
+            <a class="bouton bouton--creme" href="https://www.google.com/maps/search/?api=1&query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied__grille">
       <div>
-        <p class="footer-brand"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-sprig"/></svg>Le Basilic</p>
-        <p class="footer-addr">Bar · Hôtel · Restaurant<br>57 Grande Rue, 89100 Saligny</p>
+        <a class="logo" href="#haut">
+          <span class="logo__pastille" aria-hidden="true"><svg class="feuille" viewBox="0 0 64 64" focusable="false"><use href="#feuille"/></svg></span>
+          <span class="logo__texte"><span class="logo__nom">Le Basilic</span><span class="logo__sous">Bar · Hôtel · Restaurant</span></span>
+        </a>
+        <p class="pied__texte">Bar, hôtel et restaurant à Saligny (Yonne), à <span class="nowrap">5 km</span> de Sens.</p>
       </div>
-      <p>
-        <a href="tel:+33386978341"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg>03 86 97 83 41</a><br>
-        <a href="mailto:hotel-restaurant-lebasilic@orange.fr?subject=Demande%20de%20renseignements"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><span>hotel-restaurant-lebasilic<wbr>@orange.fr</span></a>
-      </p>
-      <p><a href="#accueil"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-up"/></svg>Haut de page</a></p>
+      <div>
+        <p class="pied__titre">Adresse</p>
+        <address>57 Grande Rue<br>89100 Saligny</address>
+      </div>
+      <div>
+        <p class="pied__titre">Coordonnées</p>
+        <ul class="pied__liens" role="list">
+          <li><a href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span class="nowrap">03 86 97 83 41</span></a></li>
+          <li><a href="mailto:hotel-restaurant-lebasilic@orange.fr?subject=Demande%20de%20renseignements"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><span class="coupe">hotel-restaurant-lebasilic@orange.fr</span></a></li>
+        </ul>
+      </div>
     </div>
-    <p class="footer-legal">Maquette proposée par Nathan, non officielle. Photos à fournir ; contenus à valider par l'établissement.</p>
+    <div class="pied__bas">
+      <p>Maquette de démonstration réalisée par Nathan&nbsp;: ce n'est pas le site officiel du Basilic. Photos à fournir&nbsp;; informations reprises des fiches de l'office de tourisme, à valider avec l'établissement.</p>
+      <a class="pied__haut" href="#haut"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-haut"/></svg>Haut de page</a>
+    </div>
   </div>
 </footer>
 
-<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-  <symbol id="i-sprig" viewBox="0 0 32 32"><path d="M16 30c0-6 .5-11 2-15"/><path d="M18 15c1-6 5-10 11-10 0 6-4 10-11 10z" fill="currentColor" fill-opacity=".18"/><path d="M18 15l6-5"/><path d="M16.6 21c-2-5-6-8-12-8 .5 6 5 9 12 8z" fill="currentColor" fill-opacity=".18"/><path d="M16.6 21l-6-4.5"/></symbol>
-  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M19.5 4.5c-8.5 0-14.5 4.6-14.5 11.5 0 1.3.2 2.5.6 3.5 8.2-.3 13.9-6.6 13.9-15z"/><path d="M5.6 19.5c3-3.5 6.3-6.6 10-9.3"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.6 4.2-2 1.3a11.5 11.5 0 0 0 6.2 6.2l1.3-2 4.2 1.6v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></symbol>
-  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"/></symbol>
-  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8.5 8.5M18 13.5V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5.5"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
-  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8v.01"/></symbol>
-  <symbol id="i-speech" viewBox="0 0 24 24"><path d="M4 5.5h16V16H10l-4.5 3.5V16H4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
-  <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M6.5 15h4"/></symbol>
-  <symbol id="i-shower" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 8 0"/><path d="M10 8.5h6"/><path d="M11 12l-.6 1.6M13 12v1.7M15 12l.6 1.6M10.4 16.5l-.6 1.6M13 16.5v1.7M15.6 16.5l.6 1.6"/></symbol>
-  <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 20.5v-16a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16"/><path d="M3.5 20.5h17"/><path d="M14.5 12.5v.01"/></symbol>
-  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.8 9.2a13 13 0 0 1 18.4 0M5.8 12.4a8.8 8.8 0 0 1 12.4 0M8.8 15.6a4.6 4.6 0 0 1 6.4 0"/><path d="M12 19v.01"/></symbol>
-  <symbol id="i-desk" viewBox="0 0 24 24"><path d="M3 9h18M5 9v11M19 9v11M13 9v5h6M15 11.5h2"/><path d="M8 9V5.5h3"/></symbol>
-  <symbol id="i-nosmoke" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/><path d="M6.5 13.5h7M15.5 13.5h2"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.8"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
-  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18.5V6M3 14.5h18v4M21 14.5V12a3 3 0 0 0-3-3h-7.5v5.5"/><circle cx="6.8" cy="11.3" r="1.8"/></symbol>
-  <symbol id="i-house" viewBox="0 0 24 24"><path d="M3 20.5h18M5 20.5V10l7-5.5 7 5.5v10.5"/><path d="M10 20.5V15h4v5.5"/><path d="M7.5 12H10v2.2H7.5zM14 12h2.5v2.2H14z"/></symbol>
-  <symbol id="i-plate" viewBox="0 0 24 24"><circle cx="12.5" cy="12" r="5.5"/><circle cx="12.5" cy="12" r="3"/><path d="M3.5 4v4a1.4 1.4 0 0 0 2.8 0V4M4.9 9.4V20M21 20V4c-1.4.9-2 2.8-2 5.5h2"/></symbol>
-  <symbol id="i-glass" viewBox="0 0 24 24"><path d="M7 3.5h10l-.8 5.5a4.2 4.2 0 0 1-8.4 0z"/><path d="M12 13.2v7.3M8.5 20.5h7M7.6 7h8.8"/></symbol>
-  <symbol id="i-parasol" viewBox="0 0 24 24"><path d="M12 4a8.5 8.5 0 0 1 8.5 7.5h-17A8.5 8.5 0 0 1 12 4z"/><path d="M12 3v1M12 11.5v9M8.5 20.5h7"/><path d="M8 11.5c.6-3.4 2-6 4-7.5 2 1.5 3.4 4.1 4 7.5"/></symbol>
-  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5.5 8h13l-1 12.5h-11z"/><path d="M9 10V6.8a3 3 0 0 1 6 0V10"/></symbol>
-</svg>
-
+<nav class="barre-actions" aria-label="Contact rapide">
+  <a class="barre-actions__appel" href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Appeler<span class="sr-only"> le 03 86 97 83 41</span></span></a>
+  <a href="mailto:hotel-restaurant-lebasilic@orange.fr?subject=Demande%20de%20renseignements"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg><span>Écrire<span class="sr-only"> un e-mail</span></span></a>
+  <a href="https://www.google.com/maps/search/?api=1&query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>Itinéraire<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></span></a>
+</nav>
 </body>
 </html>
