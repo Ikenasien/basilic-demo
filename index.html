@@ -165,8 +165,8 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .bouton--creme:hover{background:var(--creme-50);color:var(--basilic-900);transform:translateY(-1px)}
 
 /* ---------- Titres de section ---------- */
-.section{padding-block:clamp(3.75rem, 10vw, 6.5rem)}
-.tete{max-width:42rem;margin-bottom:clamp(2rem, 5vw, 3rem)}
+.section{padding-block:clamp(2.5rem, 10vw - 1rem, 6.5rem)}
+.tete{max-width:42rem;margin-bottom:clamp(1.5rem, 5vw, 3rem)}
 .surtitre{display:flex;width:fit-content;align-items:center;gap:.45rem;margin-bottom:.35rem;font-family:var(--police-craie);font-size:1.65rem;font-weight:600;line-height:1.1;color:var(--tomate);transform:rotate(-2deg);transform-origin:left center}
 .surtitre .feuille{width:1.5rem;height:1.5rem;color:var(--basilic-600);--feuille-opacite:.3}
 .tete h2{position:relative;display:inline-block;padding-bottom:.55rem;font-size:clamp(2.35rem, 6vw + 1rem, 3.5rem);letter-spacing:-.02em}
@@ -174,7 +174,8 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .chapo{margin-top:1.1rem;font-size:1.125rem;line-height:1.6}
 
 /* ---------- Emplacements photo (à fournir) ---------- */
-.photo{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:4/3;border-radius:var(--rayon);
+/* Emplacements réduits : jamais plus d'un demi-écran de haut */
+.photo{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:16/9;max-height:50vh;max-height:50svh;border-radius:var(--rayon);
   background:
     var(--motif) 0 0/96px 96px,
     radial-gradient(120% 90% at 18% 12%, rgb(253 250 243 / .95) 0%, transparent 58%),
@@ -190,7 +191,7 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .photo figcaption > span{text-wrap:pretty}
 
 /* ---------- Accueil ---------- */
-.accueil{position:relative;overflow-x:clip;padding-block:2.25rem 3.75rem;
+.accueil{position:relative;overflow-x:clip;padding-block:2rem 2.5rem;
   background:
     radial-gradient(55rem 28rem at 100% 0%, rgb(90 143 95 / .17), transparent 62%),
     radial-gradient(38rem 24rem at 0% 100%, rgb(168 63 37 / .06), transparent 62%)}
@@ -214,7 +215,7 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .accueil__horaires .ic{margin-top:.25rem}
 .accueil__confirmer{display:inline-block;font-weight:700;color:var(--tomate)}
 
-.accueil__visuel{position:relative;width:100%;max-width:25rem;margin-inline:auto;padding:0 .75rem 1.25rem 1.5rem}
+.accueil__visuel{position:relative;width:100%;max-width:17rem;max-width:min(17rem, 50svh);margin-inline:auto;padding:0 .75rem 1.25rem 1.5rem}
 .photo--arche{aspect-ratio:1/1;border-radius:50% 50% var(--rayon) var(--rayon) / 50% 50% var(--rayon) var(--rayon);box-shadow:inset 0 0 0 1px rgb(31 58 43 / .08), 0 30px 50px -30px rgb(31 58 43 / .55)}
 .photo--arche::before{inset:.7rem}
 .photo--arche .photo__art .photo__picto{width:min(30%, 6.5rem)}
@@ -226,7 +227,7 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .tampon__texte{font-family:var(--police-texte);font-weight:700;font-size:10.5px;letter-spacing:.06em;fill:var(--creme)}
 .tampon use{color:var(--creme)}
 
-.trio{display:grid;grid-template-columns:minmax(0,1fr);gap:.85rem;margin-top:2.75rem}
+.trio{display:grid;grid-template-columns:minmax(0,1fr);gap:.85rem;margin-top:2rem}
 .trio__lien{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.15rem 1rem;height:100%;padding:1rem 1.1rem;border-radius:var(--rayon);background:var(--creme-50);border:1px solid rgb(31 58 43 / .1);box-shadow:var(--ombre);color:var(--encre);text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
 .trio__lien:hover{color:var(--encre);border-color:rgb(31 58 43 / .28);transform:translateY(-2px);box-shadow:0 1px 2px rgb(31 58 43 / .06), 0 18px 30px -18px rgb(31 58 43 / .45)}
 .trio__icone{grid-row:1 / span 2;display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--basilic-100);color:var(--basilic-800)}
@@ -237,7 +238,7 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .trio__lien:hover .trio__fleche{transform:translateY(3px)}
 
 /* ---------- Hôtel ---------- */
-.hotel__photos{display:grid;gap:1rem;margin-bottom:2.5rem}
+.hotel__photos{display:grid;gap:1rem;max-width:36rem;margin-bottom:2rem}
 .hotel__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem}
 .chambres{display:grid;gap:.85rem}
 .chambre{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:.2rem 1rem;padding:1.15rem 1.2rem;border-radius:var(--rayon);background:var(--creme-50);border:1px solid rgb(31 58 43 / .1);box-shadow:var(--ombre)}
@@ -250,8 +251,9 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .chambre--famille .chambre__icone{background:var(--basilic-800);color:var(--creme)}
 
 .equipements h3{margin-bottom:1rem;font-size:1.45rem}
-.equipements ul{display:grid;gap:.6rem}
-.equipements li{display:flex;align-items:center;gap:.75rem;min-height:3rem;padding:.55rem .9rem;border-radius:.9rem;background:rgb(253 250 243 / .75);border:1px dashed rgb(31 58 43 / .22)}
+/* Liste compacte sur mobile ; pastilles encadrées dès 40em */
+.equipements ul{display:grid;gap:.35rem}
+.equipements li{display:flex;align-items:center;gap:.65rem;line-height:1.35}
 .equipements .ic{width:1.5rem;height:1.5rem;color:var(--basilic-700)}
 
 /* ---------- Ardoise (tarifs & horaires) ---------- */
@@ -312,9 +314,9 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .produit p{color:var(--encre-douce)}
 .produit strong{color:var(--basilic-800)}
 
-.aussi{margin-top:clamp(3rem, 8vw, 4.5rem)}
+.aussi{margin-top:clamp(2rem, 8vw, 4.5rem)}
 .aussi__titre{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .75rem;margin-bottom:1.25rem;font-size:clamp(1.5rem, 3vw + .9rem, 2rem)}
-.aussi__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.aussi__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;max-width:40rem}
 .emporter{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:.5rem;padding:1.6rem 1.5rem;border-radius:var(--rayon);background:var(--basilic-800);background-image:var(--motif-creme);background-size:96px 96px;color:var(--creme);box-shadow:var(--ombre)}
 .emporter__icone{display:grid;place-items:center;width:3.25rem;height:3.25rem;margin-bottom:.35rem;border-radius:50%;background:var(--creme);color:var(--basilic-900)}
 .emporter__icone .ic{width:1.6rem;height:1.6rem}
@@ -324,8 +326,8 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .emporter :focus-visible{outline-color:var(--creme)}
 
 /* ---------- Infos pratiques ---------- */
-.infos__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}
-.carte-info{padding:1.4rem 1.4rem 1.5rem;border-radius:var(--rayon);background:var(--creme-50);border:1px solid rgb(31 58 43 / .1);box-shadow:var(--ombre)}
+.infos__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.carte-info{padding:1.15rem 1.25rem 1.25rem;border-radius:var(--rayon);background:var(--creme-50);border:1px solid rgb(31 58 43 / .1);box-shadow:var(--ombre)}
 .carte-info__tete{display:flex;align-items:center;gap:.8rem;margin-bottom:.85rem}
 .rond{display:grid;place-items:center;flex:none;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--basilic-100);color:var(--basilic-800)}
 .rond .ic{width:1.35rem;height:1.35rem}
@@ -333,8 +335,10 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .carte-info address{font-size:1.125rem;font-weight:700;line-height:1.45;color:var(--basilic-900)}
 .carte-info__note{margin-top:.25rem;color:var(--encre-douce)}
 .carte-info .bouton{margin-top:1.1rem}
-.puces{display:flex;flex-wrap:wrap;gap:.5rem}
-.puces li{display:inline-flex;align-items:center;gap:.45rem;padding:.4rem .95rem;border-radius:999px;background:var(--basilic-100);color:var(--basilic-900);font-weight:700}
+/* Langues et paiement : liste en ligne sur mobile ; pastilles dès 40em */
+.puces{display:flex;flex-wrap:wrap;gap:.15rem 0}
+.puces li{display:inline-flex;align-items:center;gap:.4rem;color:var(--basilic-900);font-weight:700}
+.puces li:not(:last-child)::after{content:"·";margin:0 .55rem;color:var(--basilic-600)}
 .puces .ic{width:1.1rem;height:1.1rem;color:var(--basilic-700)}
 
 /* ---------- Contact ---------- */
@@ -482,8 +486,11 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
   .barre-actions a{flex-direction:row;gap:.5rem;min-height:2.75rem}
 }
 @media (min-width:40em){
-  .hotel__photos{grid-template-columns:1fr 1fr}
-  .equipements ul{grid-template-columns:1fr 1fr}
+  .equipements ul{grid-template-columns:1fr 1fr;gap:.6rem}
+  .equipements li{gap:.75rem;min-height:3rem;padding:.55rem .9rem;border-radius:.9rem;background:rgb(253 250 243 / .75);border:1px dashed rgb(31 58 43 / .22)}
+  .puces{gap:.5rem}
+  .puces li{padding:.4rem .95rem;border-radius:999px;background:var(--basilic-100)}
+  .puces li:not(:last-child)::after{content:none}
   .aussi__grille{grid-template-columns:1fr 1fr}
   .emporter{grid-column:1 / -1}
   .ardoise__tableau{padding:2rem 2rem 1.8rem}
@@ -527,14 +534,12 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
 
   .accueil{padding-block:3.5rem 5rem}
   .accueil__grille{grid-template-columns:minmax(0, 1.1fr) minmax(0, .9fr);gap:3rem}
-  .accueil__visuel{max-width:none;padding:0 1.25rem 1.5rem 2.75rem}
+  .accueil__visuel{max-width:24rem;padding:0 1.25rem 1.5rem 2.75rem}
   .photo--arche{aspect-ratio:4/5;border-radius:50% 50% var(--rayon-l) var(--rayon-l) / 40% 40% var(--rayon-l) var(--rayon-l)}
   .brin{left:-.7rem;bottom:-.95rem;width:6.65rem}
   .tampon{top:1.5rem;right:-.5rem;width:7.5rem;height:7.5rem}
   .trio{margin-top:3.5rem}
 
-  .hotel__photos{grid-template-columns:1.25fr 1fr;align-items:end}
-  .hotel__photos .photo:first-child{aspect-ratio:5/3}
   .hotel__grille{grid-template-columns:minmax(0, 1.3fr) minmax(0, 1fr);grid-template-areas:"chambres tarifs" "equipements tarifs";gap:2.25rem 3.5rem}
   .ardoise--tarifs{position:sticky;top:6.5rem}
   .chambres{align-self:start;grid-auto-rows:auto}
@@ -542,15 +547,9 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
   .restaurant__entete{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:3rem}
   .restaurant__entete .mini-ardoise{margin:0 0 .5rem}
   .restaurant__grille{grid-template-columns:minmax(0, 1fr) minmax(0, 1.1fr);gap:3.5rem}
-  .restaurant__grille .photo{aspect-ratio:5/4}
+  .restaurant__grille .photo{width:100%;max-width:28rem;aspect-ratio:4/3;justify-self:end}
 
   .infos__grille{grid-template-columns:minmax(0, 1.05fr) minmax(0, 1fr);gap:1.5rem 2rem}
-}
-/* Trois colonnes pour « Bar, terrasse et plats à emporter » seulement quand le conteneur
-   a atteint sa largeur maximale : la carte verte n'est alors pas plus haute que les photos 4/3. */
-@media (min-width:72em){
-  .aussi__grille{grid-template-columns:1fr 1fr 1fr}
-  .emporter{grid-column:auto}
 }
 @media (min-width:75em){
   .accueil__titre{font-size:8rem}
@@ -797,10 +796,6 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-lit2"/></svg></div>
           <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Une chambre exposée plein sud</span></figcaption>
         </figure>
-        <figure class="photo">
-          <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-famille"/></svg></div>
-          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La chambre familiale</span></figcaption>
-        </figure>
       </div>
 
       <div class="hotel__grille">
@@ -901,14 +896,6 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="aussi" id="bar">
         <h3 class="aussi__titre">Bar, terrasse et plats à emporter</h3>
         <div class="aussi__grille">
-          <figure class="photo">
-            <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-parasol"/></svg></div>
-            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La terrasse</span></figcaption>
-          </figure>
-          <figure class="photo">
-            <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-verre"/></svg></div>
-            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Le bar</span></figcaption>
-          </figure>
           <div class="emporter">
             <span class="emporter__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-sac"/></svg></span>
             <h4>Plats à emporter</h4>
