@@ -38,7 +38,7 @@
   --encre:#1f2b25;
   --encre-douce:#4b5750;
   --tomate:#a83f25;
-  --tomate-clair:#f2a88f;
+  --tomate-clair:#f4ae97;
   /* Ardoise vert basilic dans un cadre de bois clair */
   --ardoise:#1d2d26;
   --craie:#f3efe4;
@@ -93,6 +93,8 @@ a:hover{color:var(--basilic-900)}
 main:focus{outline:none}
 /* Les ancres ne passent pas sous l'en-tête collant (hauteur + bordure) */
 main,.section,.aussi{scroll-margin-top:calc(var(--entete-h) + 2px)}
+/* « Bar, terrasse… » n'a pas de marge interne au-dessus de son titre : un peu plus d'air sous l'en-tête */
+.aussi{scroll-margin-top:calc(var(--entete-h) + 1.5rem)}
 /* … ni les liens qui reçoivent le focus au clavier (Maj+Tab) */
 main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .sprite{position:absolute;width:0;height:0;overflow:hidden}
@@ -185,6 +187,7 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .photo figcaption{position:absolute;left:.85rem;right:.85rem;bottom:.85rem;display:flex;align-items:flex-start;gap:.55rem;padding:.55rem .85rem;border-radius:.9rem;background:rgb(253 250 243 / .94);color:var(--encre);font-size:1rem;line-height:1.35;box-shadow:0 6px 14px -8px rgb(31 58 43 / .45)}
 .photo figcaption .ic{width:1.1rem;height:1.1rem;margin-top:.1rem;color:var(--basilic-600)}
 .photo__mention{font-weight:700;color:var(--basilic-800)}
+.photo figcaption > span{text-wrap:pretty}
 
 /* ---------- Accueil ---------- */
 .accueil{position:relative;overflow-x:clip;padding-block:2.25rem 3.75rem;
@@ -420,6 +423,13 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
   .horaires td{margin-left:auto;padding-top:0}
   .aujourdhui__mot{display:block;width:fit-content;margin:.15rem 0 0}
 }
+/* ---------- Sous 20em (320 px en taille de texte normale, atteint aussi avec un fort zoom ou un texte agrandi) :
+   le tampon s'efface et la légende de l'arche passe sous le dessin, pour qu'ils ne se chevauchent jamais ---------- */
+@media not all and (min-width:20em){
+  .tampon{display:none}
+  .photo--arche{display:flex;flex-direction:column;justify-content:flex-end;overflow:visible}
+  .photo--arche figcaption{position:relative;inset:auto;margin:.85rem}
+}
 /* ---------- Sous 15em : mise en page resserrée, sans défilement horizontal jusqu'à 10em de large (320 px avec un texte à 200 %) ----------
    Pictos au-dessus du texte, cadres et marges amincis, grands titres à la mesure de l'écran, mot trop long coupé ;
    la barre d'actions s'efface (appel, e-mail et itinéraire restent dans la page) et l'en-tête ne montre que la feuille
@@ -485,7 +495,7 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
   .trio__titre,.trio__texte{grid-column:1 / -1}
   .trio__fleche{grid-column:2;grid-row:1;justify-self:end}
   .hotel__grille{grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);grid-template-areas:"chambres tarifs" "equipements equipements";gap:2.5rem 2rem;align-items:start}
-  .chambres{grid-area:chambres}
+  .chambres{grid-area:chambres;align-self:stretch;grid-auto-rows:1fr}
   .ardoise--tarifs{grid-area:tarifs}
   .equipements{grid-area:equipements}
   .restaurant__grille{grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);align-items:center}
@@ -524,9 +534,10 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
   .trio{margin-top:3.5rem}
 
   .hotel__photos{grid-template-columns:1.25fr 1fr;align-items:end}
-  .hotel__photos .photo:first-child{aspect-ratio:16/10}
+  .hotel__photos .photo:first-child{aspect-ratio:5/3}
   .hotel__grille{grid-template-columns:minmax(0, 1.3fr) minmax(0, 1fr);grid-template-areas:"chambres tarifs" "equipements tarifs";gap:2.25rem 3.5rem}
   .ardoise--tarifs{position:sticky;top:6.5rem}
+  .chambres{align-self:start;grid-auto-rows:auto}
 
   .restaurant__entete{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:3rem}
   .restaurant__entete .mini-ardoise{margin:0 0 .5rem}
@@ -598,6 +609,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && nav.classList.contains('est-ouvert')) basculer(false, true);
+  });
+  // Toucher la page hors de l'en-tête (ou commencer à défiler) referme aussi le panneau
+  document.addEventListener('pointerdown', function (e) {
+    if (nav.classList.contains('est-ouvert') && !entete.contains(e.target)) basculer(false, false);
   });
   var bureau = window.matchMedia('(min-width: 60em)');
   var auChangement = function () { basculer(false, false); };
@@ -715,7 +730,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="accueil__visuel">
           <figure class="photo photo--arche">
             <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-maison"/></svg></div>
-            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La façade sur la Grande Rue</span></figcaption>
+            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La façade sur la Grande&nbsp;Rue</span></figcaption>
           </figure>
           <svg class="brin" viewBox="1 12 112 237" aria-hidden="true" focusable="false">
             <g transform="rotate(-16 84 246)">
@@ -879,7 +894,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </ul>
         <figure class="photo">
           <div class="photo__art" aria-hidden="true"><svg class="ic photo__picto" focusable="false"><use href="#i-assiette"/></svg></div>
-          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Le buffet d'hors-d'œuvre</span></figcaption>
+          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Le buffet <span class="nowrap">d'hors-d'œuvre</span></span></figcaption>
         </figure>
       </div>
 
@@ -1001,7 +1016,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="contact-carte">
             <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
             <span class="contact-carte__type">Adresse</span>
-            <address class="contact-carte__valeur">57 Grande Rue,<br>89100 Saligny</address>
+            <address class="contact-carte__valeur">57 Grande Rue<br>89100 Saligny</address>
             <span class="contact-carte__espace"></span>
             <a class="bouton bouton--creme" href="https://www.google.com/maps/search/?api=1&query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a>
           </div>
