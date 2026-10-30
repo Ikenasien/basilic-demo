@@ -203,6 +203,8 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .accueil__lieu .ic{color:var(--tomate)}
 .accueil__distinction{display:inline-flex;align-items:center;gap:.45rem;margin-top:.7rem;padding:.3rem .8rem;border-radius:999px;border:1px solid rgb(31 58 43 / .16);background:rgb(253 250 243 / .7);font-size:.875rem;font-weight:700;line-height:1.3;color:var(--basilic-800)}
 .accueil__distinction .ic{width:1rem;height:1rem;color:var(--tomate)}
+.accueil__distinction a{color:inherit;text-decoration-color:rgb(39 74 54 / .35)}
+.accueil__distinction a:hover{color:var(--basilic-900);text-decoration-color:currentColor}
 .accueil__intro{max-width:34rem;margin-top:1.25rem;font-size:1.125rem;line-height:1.65}
 .accueil__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
 .accueil__actions .bouton{flex:1 1 100%}
@@ -309,7 +311,7 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .produit::before{content:"";position:absolute;inset:.4rem;border:1.5px dashed rgb(47 93 67 / .22);border-radius:calc(var(--rayon) - .35rem);pointer-events:none}
 .produit__icone{grid-row:1 / span 2;display:grid;place-items:center;width:3.25rem;height:3.25rem;border-radius:50%;background:var(--basilic-100);color:var(--basilic-800)}
 .produit__icone .ic{width:1.6rem;height:1.6rem}
-.produit h3{font-size:1.3rem}
+.produit h3,.produit h4{font-size:1.3rem}
 .produit p{color:var(--encre-douce)}
 .produit strong{color:var(--basilic-800)}
 
@@ -333,6 +335,7 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 .carte-info h3{font-size:1.3rem}
 .carte-info address{font-size:1.125rem;font-weight:700;line-height:1.45;color:var(--basilic-900)}
 .carte-info__note{margin-top:.25rem;color:var(--encre-douce)}
+.carte-info__plan{display:block;width:100%;aspect-ratio:4/3;max-height:18rem;margin-top:1rem;border:0;border-radius:calc(var(--rayon) - .35rem);box-shadow:inset 0 0 0 1px rgb(31 58 43 / .1);background:var(--creme-200)}
 .carte-info .bouton{margin-top:1.1rem}
 /* Langues et paiement : liste en ligne sur mobile ; pastilles dès 40em */
 .puces{display:flex;flex-wrap:wrap;gap:.15rem 0}
@@ -566,7 +569,7 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
 /* ---------- Impression (pour le rendez-vous) ---------- */
 @media print{
   html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .evitement,.nav-bouton,.nav,.barre-actions{display:none!important}
+  .evitement,.nav-bouton,.nav,.barre-actions,.carte-info__plan{display:none!important}
   .entete,.js .entete{position:static}
   .pied{padding-bottom:1.5rem}
   .photo,.ardoise,.chambre,.produit,.carte-info,.contact-carte,.emporter,.trio__lien{break-inside:avoid}
@@ -710,7 +713,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="accueil__pastille">Bar · Hôtel · Restaurant</p>
           <h1 id="titre-accueil" class="accueil__titre"><span class="accueil__le">Le</span> Basilic</h1>
           <p class="accueil__lieu"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>Saligny (Yonne) · à <span class="nowrap">5 km</span> de Sens</span></p>
-          <p class="accueil__distinction"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-ruban"/></svg>Recommandé par le Petit Futé 2026</p>
+          <p class="accueil__distinction"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-ruban"/></svg><a href="https://www.petitfute.com/v8268-saligny-89100/c1166-hebergement/c158-hotel/615162-le-basilic.html" target="_blank" rel="noopener">Recommandé par le Petit Futé 2026<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a></p>
           <p class="accueil__intro">Une adresse de village, simple et chaleureuse. Poussez la porte du Basilic pour une cuisine maison à base de produits frais, une nuit dans l'une des quatre chambres exposées plein sud, ou un verre au bar et en terrasse.</p>
           <div class="accueil__actions">
             <a class="bouton bouton--plein" href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Appeler le <span class="nowrap">03 86 97 83 41</span></span></a>
@@ -895,6 +898,16 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="aussi" id="bar">
         <h3 class="aussi__titre">Bar, terrasse et plats à emporter</h3>
         <div class="aussi__grille">
+          <div class="produit">
+            <span class="produit__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-verre"/></svg></span>
+            <h4>Le bar</h4>
+            <p>Ouvert aux horaires de l'établissement.</p>
+          </div>
+          <div class="produit">
+            <span class="produit__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-parasol"/></svg></span>
+            <h4>La terrasse</h4>
+            <p>Pour prendre un verre en plein air.</p>
+          </div>
           <div class="emporter">
             <span class="emporter__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-sac"/></svg></span>
             <h4>Plats à emporter</h4>
@@ -942,6 +955,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
           <address>57 Grande Rue<br>89100 Saligny</address>
           <p class="carte-info__note">Dans l'Yonne, à <span class="nowrap">5 km</span> de Sens.</p>
+          <iframe class="carte-info__plan" src="https://www.openstreetmap.org/export/embed.html?bbox=3.3474%2C48.2116%2C3.3574%2C48.2166&amp;layer=mapnik&amp;marker=48.2141357%2C3.3523865" title="Plan : Le Basilic, 57 Grande Rue à Saligny" loading="lazy"></iframe>
           <a class="bouton bouton--contour" href="https://www.google.com/maps/search/?api=1&query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a>
         </div>
 
