@@ -301,9 +301,6 @@ main a[href],footer a[href]{scroll-margin-top:calc(var(--entete-h) + .75rem)}
 
 /* ---------- Restaurant ---------- */
 .restaurant{background-color:var(--creme-200);background-image:var(--lin);border-block:1px solid rgb(31 58 43 / .08)}
-.mini-ardoise{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:.75rem;margin-top:1.6rem;padding:.6rem 1.15rem .65rem;border-radius:.8rem;background:var(--ardoise);color:var(--craie);box-shadow:0 0 0 5px var(--bois), 0 0 0 6px rgb(0 0 0 / .15), 0 14px 22px -12px rgb(40 28 12 / .6);transform:rotate(-1.5deg)}
-.mini-ardoise__nom{font-weight:700;color:var(--craie-douce)}
-.mini-ardoise__prix{font-family:var(--police-titre);font-size:1.4rem;font-weight:600;line-height:1}
 .restaurant__entete{margin-bottom:2.5rem}
 .restaurant__entete .tete{margin-bottom:0}
 .restaurant__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem}
@@ -453,7 +450,6 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
   .equipements h3,.emporter h4{font-size:min(1.45rem, 11.5vw)}
   .trio__titre{font-size:min(1.25rem, 10.5vw)}
   .prix dd{font-size:min(1.5rem, 10.5vw)}
-  .mini-ardoise__prix{font-size:min(1.4rem, 10.5vw)}
   .accueil__pastille{letter-spacing:.06em}
   .accueil__visuel{padding:0}
   .photo{display:flex;flex-direction:column;justify-content:flex-end;min-width:0;overflow:visible}
@@ -547,7 +543,6 @@ a.contact-carte:hover{color:var(--creme);background:rgb(247 240 225 / .12);borde
   .chambres{align-self:start;grid-auto-rows:auto}
 
   .restaurant__entete{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:3rem}
-  .restaurant__entete .mini-ardoise{margin:0 0 .5rem}
   .restaurant__grille{grid-template-columns:minmax(0, 1fr) minmax(0, 1.1fr);gap:3.5rem}
   .restaurant__grille .photo{width:100%;max-width:28rem;aspect-ratio:4/3;justify-self:end}
 
@@ -726,7 +721,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <span class="accueil__ou"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg>57 Grande Rue, 89100 Saligny</span>
               <a class="accueil__itineraire" href="https://www.google.com/maps/search/?api=1&query=57%20Grande%20Rue%2C%2089100%20Saligny" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire<span class="sr-only"> (s'ouvre dans un nouvel onglet)</span></a>
             </p>
-            <p class="accueil__horaires"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg><span>Du lundi au vendredi, <span class="nowrap">7h – 21h</span> · fermé samedi et dimanche <span class="accueil__confirmer">(horaires à confirmer)</span></span></p>
+            <p class="accueil__horaires"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg><span>Du lundi au vendredi, <span class="nowrap">7h – 19h30</span> · samedi matin <span class="accueil__confirmer">(horaires à confirmer)</span></span></p>
           </div>
         </div>
 
@@ -836,8 +831,9 @@ document.addEventListener('DOMContentLoaded', function () {
             </dl>
             <hr class="ardoise__trait">
             <dl class="prix">
-              <div><dt>Repas</dt><dd>30&nbsp;€/pers.</dd></div>
+              <div><dt>Repas des clients de l'hôtel</dt><dd>30&nbsp;€/pers.</dd></div>
             </dl>
+            <p class="ardoise__alerte">(formule à confirmer)</p>
             <div class="ardoise__pied">
               <p>Pour vous renseigner&nbsp;:</p>
               <a class="bouton bouton--creme" href="tel:+33386978341"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Appeler le <span class="nowrap">03 86 97 83 41</span></span></a>
@@ -870,7 +866,6 @@ document.addEventListener('DOMContentLoaded', function () {
           <h2 id="titre-restaurant">Le restaurant</h2>
           <p class="chapo">Au Basilic, la cuisine est faite maison, à base de produits frais.</p>
         </div>
-        <p class="mini-ardoise"><span class="mini-ardoise__nom">Repas</span><span class="sr-only"> : </span><span class="mini-ardoise__prix">30&nbsp;€/pers.</span></p>
       </div>
 
       <div class="restaurant__grille">
@@ -928,12 +923,12 @@ document.addEventListener('DOMContentLoaded', function () {
             <table class="horaires">
               <caption class="sr-only">Horaires (horaires à confirmer)</caption>
               <tbody>
-                <tr data-jour="1"><th scope="row">Lundi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
-                <tr data-jour="2"><th scope="row">Mardi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
-                <tr data-jour="3"><th scope="row">Mercredi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
-                <tr data-jour="4"><th scope="row">Jeudi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
-                <tr data-jour="5"><th scope="row">Vendredi</th><td><time datetime="07:00">7h</time> – <time datetime="21:00">21h</time></td></tr>
-                <tr data-jour="6" class="ferme"><th scope="row">Samedi</th><td>Fermé</td></tr>
+                <tr data-jour="1"><th scope="row">Lundi</th><td><time datetime="07:00">7h</time> – <time datetime="19:30">19h30</time></td></tr>
+                <tr data-jour="2"><th scope="row">Mardi</th><td><time datetime="07:00">7h</time> – <time datetime="19:30">19h30</time></td></tr>
+                <tr data-jour="3"><th scope="row">Mercredi</th><td><time datetime="07:00">7h</time> – <time datetime="19:30">19h30</time></td></tr>
+                <tr data-jour="4"><th scope="row">Jeudi</th><td><time datetime="07:00">7h</time> – <time datetime="19:30">19h30</time></td></tr>
+                <tr data-jour="5"><th scope="row">Vendredi</th><td><time datetime="07:00">7h</time> – <time datetime="19:30">19h30</time></td></tr>
+                <tr data-jour="6"><th scope="row">Samedi</th><td>Le matin</td></tr>
                 <tr data-jour="0" class="ferme"><th scope="row">Dimanche</th><td>Fermé</td></tr>
               </tbody>
             </table>
